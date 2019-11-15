@@ -1,0 +1,51 @@
+.contact-us-section{
+  margin-top:50px;
+  margin-bottom:50px; 
+}
+.contact-us-con{
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2) ;
+    border-radius: 8px;
+    padding: 60px 0;
+}
+.contactus-heading{
+  color: rgba(0,0,0,0.7);
+  font-size: 36px;
+  text-align: center;
+  padding: 0 10px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+.contactus-subheading{
+  color: gray;
+
+  padding: 0 10px;
+  text-align: center;
+
+}
+.contactus-row{
+  text-align: center;
+  margin:0px 0 0 0;
+}
+.cu-col img{
+  width: 60%;
+}
+.cu-col h4{
+  margin: 20px 0 5px 0;
+  color: rgba(0,0,0,0.7);
+  font-weight: 700;
+}
+.cu-col p{
+  text-decoration: none;
+  color: gray ;
+  font-size: 18px;
+}
+.cu-col p a{
+  text-decoration: none;
+  color: gray ;
+}
+.cu-address{
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+  /* padding:0 50px; */
+}

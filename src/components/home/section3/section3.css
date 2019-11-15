@@ -1,0 +1,81 @@
+.s3-left{
+    width: 650px;
+    background-color: #fd9700;
+    height: 400px;
+    padding:30px 100px ;
+    
+}
+
+
+
+
+
+
+.left-c1{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.left-c1 p{
+
+ font-size: 24px;
+ font-weight: 500;
+ color: rgb(63, 63, 63);
+}
+.left-c1 ul{
+    list-style-image: url("./tik.png");
+}
+.left-c1 li{
+    margin-top: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+   
+}
+.s3-left h1{
+color: white;
+}
+.right-c1{
+    display: flex;
+    width: 600px;
+    height: 400px;
+    /* box-shadow: 0px 8px 7px -5px black; */
+    align-items: center;
+    padding: 90px;
+
+}
+.right-c1 img{
+    width: 200px;
+    margin-right: 20px;
+}
+.section3-c{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding-top: 130px !important;
+}
+.shadow{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 15px grey;
+}
+.right-call h1{
+ color: #fd9700;
+}
+.right-call p{
+    font-size: 26px;
+    font-weight: 500;
+    color: grey;
+
+
+
+}
+
+.right-call span{
+    font-size: 26px;
+    color: grey;
+
+}

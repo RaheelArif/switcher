@@ -1,0 +1,9 @@
+.section1-c{
+width: 100%;
+height: auto;
+/* background-color: rgba(192, 81, 81, 0.6); */
+}
+.section1-c2{
+    display: flex;
+    flex-wrap: wrap;
+}

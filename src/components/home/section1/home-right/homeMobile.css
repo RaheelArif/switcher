@@ -1,0 +1,251 @@
+.home-right {
+  width: 300px;
+  /* background: red; */
+}
+.hr-p{
+  font-size: 20px;
+  width: 360px;
+}
+.mobile-div {
+  width: 220px;
+  height: 370px;
+  background: url("./images/mobile.png");
+  background-size: 100% 100%;
+  box-shadow: 0px 0px 15px grey;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.mbl-input input{
+  border: 1px solid black;
+  outline: none;;
+}
+.mbl-input input:focus{
+  border: 1px solid rgb(255, 175, 3);
+  outline: none;;
+}
+@media screen and (max-width: 1111px) {
+  .mobile-div {
+    background: url("");
+    background-color: white;
+  }
+}
+
+.mainchatbox::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+/* Track */
+.header-spacer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainchatbox::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* Handle */
+
+.mainchatbox::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+/* Handle on hover */
+
+/* .mainchatbox::-webkit-scrollbar-thumb:hover {
+  background: #111111;
+} */
+/* ReactVirtualized__List */
+.ReactVirtualized__List::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+/* Track */
+
+/* .ReactVirtualized__Grid.ReactVirtualized__List {
+  height: 251px !important;
+} */
+.ReactVirtualized__List::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 10px;
+  margin-top: 0px;
+  height: 321px;
+
+  margin-bottom: 10px;
+}
+/* Handle */
+
+.ReactVirtualized__List::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+/* Handle on hover */
+
+.ReactVirtualized__List::-webkit-scrollbar-thumb:hover {
+}
+.mainchatbox {
+  width: 90%;
+  /* height: 270px !important; */
+  /* height: 440px; */
+  border-bottom: 1px white solid;
+  position: relative;
+  /* padding-top: 10px; */
+  /* overflow-y: scroll; */
+}
+
+.chatstart {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  /* padding-left: 60px; */
+  padding-top: 30px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.message {
+  /* width: 97%; */
+  /* height: 360px; */
+  width: 150px;
+  /* height: 110px; */
+  padding: 10px;
+  display: flex;
+  /* color: black; */
+  flex-wrap: wrap;
+  /* align-items: center;
+  background-color: yellow; 
+}
+
+.c {
+  max-width: 70%;
+}
+
+.message-time {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  color: gray;
+  font-size: 0.75rem;
+  */
+}
+.message-content0 {
+  width: 130px;
+  /* height: 90px; */
+  padding: 5px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  border: rgb(52, 88, 151) 1px solid;
+  /* display: flex; */
+  /* margin-top: 10px; */
+  color: white;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  align-items: center;
+  background-color: rgb(68, 114, 196);
+}
+.message-content1 {
+  width: 150px;
+  /* height: 90px; */
+  padding: 5px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 92%,
+    28% 92%,
+    20% 99%,
+    10% 91%,
+    0 91%
+  );
+  border: rgb(52, 88, 151) 1px solid;
+
+  margin-left: 10px;
+  color: black;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(230, 243, 47);
+}
+/*
+.message-text {
+  text-align: justify;
+  text-justify: inter-word;
+  width: 50%;
+}
+.name {
+  display: inline;
+  font-weight: bold;
+}
+
+.newMessageForm {
+  width: 90%;
+  /* background-color: aqua; */
+
+.newMessageForm .input {
+  height: 10px;
+  /* width: 40rem; */
+  width: 100%;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.newMessageForm .emojiBut {
+  height: 35px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 1.5rem;
+}
+
+.newMessageForm .emojiPicker {
+  position: absolute;
+  /* bottom: 10; */
+  /* top: -900; */
+  bottom: 0;
+  right: 8%;
+  top: 23.5%;
+  /* float: right; */
+  margin-left: 200px;
+}
+.emoji-mart-preview {
+  display: none;
+}
+.emojiPicker {
+  height: 0px;
+}
+.newMessageForm .sendMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.my_message {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  padding: 10px;
+  width: 97%;
+  /* background-color: aqua; */
+
+  /* align-items: center; */
+  border-top: 1px gray solid;
+}
+
+.my_style {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}

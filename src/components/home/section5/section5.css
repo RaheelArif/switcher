@@ -1,0 +1,81 @@
+.section5 {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 60px
+}
+.s5-h1{
+    font-weight: 700;
+    font-size: 45px;
+    color: rgb(54, 53, 53);
+    margin-top: 90px;
+}
+.s5-container{
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.s5-banks{
+    background-color: #fd9700;
+    padding: 30px 0px 0px 20px;
+    border-radius: 10px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 0px 20px rgb(143, 143, 143);
+    width: 360px;
+    cursor: pointer;
+}
+.s5-banks h1{
+ color: white;
+font-size: 36px;
+
+}
+.s5-banks img{
+    width: 130px;
+    height: 130px;
+}
+.s5-banks ul{
+    list-style-image: url("./images//cross.png");
+    color: white;
+}
+.s5-banks li{
+   font-size: 24px;
+   margin-left: -9px;
+}
+.s5-switcher{
+    background-color: #60615b;
+    padding: 30px 0px 0px 20px;
+    border-radius: 10px;
+    border-bottom-left-radius: 50px;
+    width: 360px;
+    box-shadow: 0px 0px 20px rgb(143, 143, 143);
+    cursor: pointer;
+
+    
+}
+.s5-switcher h1{
+ color: white;
+ font-size: 36px;
+
+}
+.s5-switcher img{
+    width: 80px;
+    height: 80px;
+    margin: 30px 0px 21px 30px;
+}
+.s5-switcher ul{
+    list-style-image: url("./images//tick.png");
+    color: white;
+}
+.s5-switcher li{
+   font-size: 24px;
+   margin-left: -9px;
+}
+.click{
+    padding: 20px;
+    z-index: 20;
+    margin: -20px;
+}
+.tick{
+    list-style-image: url("./images//tick.png") !important;
+}

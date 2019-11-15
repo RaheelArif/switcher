@@ -1,0 +1,126 @@
+.footer-section {
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 20px;
+  font-weight: 600;
+}
+.links h6,
+.social-links h6,
+.contact-details h6 {
+  color: gray;
+}
+.footer-row h6 {
+  color: white;
+}
+.f-h6 {
+  font-size: 26px;
+  padding: 10px 0;
+}
+.links ul,
+.social-links ul,
+.contact-details ul {
+  margin: 10px 0 0 0 0 !important;
+  padding: 0;
+  list-style-type: none;
+}
+.links ul li,
+.social-links ul li,
+.contact-details ul li {
+  margin: 10px 0;
+}
+.links ul li a,
+.social-links ul li a,
+.contact-details ul li a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid white;
+  /* background: white; */
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+}
+.social-icon i {
+    padding: 8px 10px;
+  font-size: 32px;
+  /* width: 40px; */
+  color: white;
+  /* height: 40px;   */
+  /* background: red; */
+}
+.social-icon i:hover {
+  color: blue;
+  cursor: pointer;
+  /* width: 40px; */
+  /* height: 40px; */
+}
+
+.brief {
+  margin: 20px 0;
+}
+.brief p {
+  font-weight: 600;
+  font-size: 14px;
+}
+.warnings {
+  /* background: lightgrey; */
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+.warnings p {
+  border-radius: 10px;
+  font-size: 80%;
+  font-weight: 700;
+  background: white;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 5px;
+  margin: 16px 0;
+}
+.credit {
+  margin-top: 20px;
+}
+.credit p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: lightgray;
+}
+.about-p {
+  color: lightgray;
+  /* text-align: justify; */
+  padding: 10px;
+}
+.social-icon-div {
+  margin: 40px 0;
+}
+.footer-logo{
+  width: 90%;
+  padding: 15px 0 0 0;
+
+}
+.f-col{
+  margin: 0 0 20px 0;
+}
+.warning-toggle{
+  cursor: pointer;
+  background-color: #fd9700;
+  text-align: center;
+  color: white;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.warning-toggle p{
+  margin: 0 0 0 0;
+  padding: 0 0 5px 0;
+}
+.warning-toggle p:first-child{
+  /* margin: 17px 0 0 0; */
+  padding: 17px 0 0 0;
+  line-height: 10px;
+}

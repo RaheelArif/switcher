@@ -1,0 +1,35 @@
+.aboutus-section{
+    margin-top:50px;
+    margin-bottom:50px; 
+}
+.about-con{
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2) ;
+    border-radius: 8px;
+    padding: 60px 0;
+}
+.left-content{
+    margin: 30px 0;
+}
+.abtimg{
+
+}
+.img{
+    width: 300px;
+    margin-top:40px; 
+}
+.img img{
+    width: 100%;
+    height: auto;
+}
+.right-content h6{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+.right-content p{
+    padding: 0 30px 0 0;
+    font-weight: 600;
+    
+}
+.right-content a{
+    text-decoration: underline;
+}

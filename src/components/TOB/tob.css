@@ -1,0 +1,84 @@
+.tob-section {
+  margin: 30px 0;
+}
+.tob-con{
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.tob-heading {
+  text-align: center;
+  margin: 50px 0;
+  padding: 30px 0;
+}
+.tob-heading h1 {
+  font-weight: 700;
+  padding: 0 0 10px 0;
+}
+.tob-heading h6 {
+  font-weight: 600;
+}
+
+.tob-toggle {
+  padding: 0 30px;
+  margin: 15px 0;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.09);
+
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.09);
+}
+.tob-toggle-div {
+  /* padding: 5px 30px; */
+}
+.tob-toggle-div:hover {
+  cursor: pointer;
+}
+.tob-toggle-div h5 {
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 22px;
+  color: #4c5b64;
+  margin: 0;
+}
+.tob-i-right {
+  margin: 0 10px 0 0;
+}
+.tob-i-down {
+  margin: 0 10px 0 0;
+  display: none;
+}
+.tob-collaps {
+  background-color: #fd9700;
+  color: white;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
+}
+.tob-collaps h5 {
+  color: white;
+}
+.tob-collaps .tob-i-right {
+  display: none;
+}
+.tob-collaps .tob-i-down {
+  display: inline;
+}
+
+.detils p {
+  padding: 0 0 0 8px;
+  border-left: 2px solid white;
+  margin: 0 0 20px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.detils p h6 {
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.detils p ul {
+  margin: 20px 0 20px 0;
+  /* color: black; */
+  line-height: 1.2;
+  font-size: 17px;
+  font-weight: 600;
+}

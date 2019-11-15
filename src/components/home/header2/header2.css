@@ -1,0 +1,68 @@
+.header2{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+}
+@media screen and (max-width: 993px) {
+ .header2{
+   display: none;
+ }
+}
+.h2-c2{
+display: flex;
+justify-content: space-around;
+background-color: rgba(0, 0, 0, 0.7);
+width: 80%;
+/* padding: 30px 0px; */
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+box-shadow: 0px 8px 17px -8px black;
+
+}
+.h2-errow{
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(253, 151, 0, 0.7);
+}
+.errow-2{
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari prior 9.0 */
+  transform: rotate(90deg); /* Standard syntax */
+
+}
+.h2-links{
+  padding: 30px 0px;
+   color: white;
+
+}
+.h2-links:hover{
+  
+   color:#fd9700 ;
+   text-decoration: none;
+   transition: 0.5s;
+
+}
+
+/* Style the header */
+
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  

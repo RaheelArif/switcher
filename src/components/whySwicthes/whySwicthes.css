@@ -1,0 +1,68 @@
+.ws-container{
+    padding: 20px 0px;
+    margin: 0% 20%;
+    border-bottom: 1px solid #fd9700;
+
+}
+@media screen and (max-width: 1180px) {
+    .ws-container{
+        margin: 0% 15%;
+    
+    }
+  }
+  @media screen and (max-width: 980px) {
+    .ws-container{
+        margin: 0% 10%;
+    
+    }
+  }
+@media screen and (max-width: 680px) {
+    .ws-container{
+        margin: 0% 5%;
+    
+    }
+  }
+.ws-h1{
+    color: #fd9700;
+}
+.ws-p1{
+line-height: 1.1em;
+}
+.ws-c2{
+    margin: 50px 0px 20px 0px;
+}
+.ws-h3{
+    border-bottom: 1px solid #fd9700;
+    padding-bottom: 8px;
+    font-size: 20px;
+    margin-bottom: 20px;;
+}
+.ws-why{
+    margin-top: -10px;
+}
+.ws-h3 span {
+    color: #fd9700;
+
+}
+.ws-c2 ul li{
+    
+    line-height: 1.1em;
+    margin-bottom: 5px;
+}
+.ws-c2 ul{
+    list-style-type: none;;
+    margin-bottom: 25px;
+}
+.ws-c2-p1{
+    font-size: 17px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+.ws-c2 ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #fd9700; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
