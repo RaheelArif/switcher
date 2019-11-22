@@ -14,6 +14,7 @@ traditional = () => {this.setState({box :3})}
         const name  = this.state
         return (
             <div className="section5" id="section5">
+                <p className="s5bg">Why US</p>
                 <h1 className="s5-h1">Why we're better</h1>
                 <div className="s5-container ">
                     <div onClick={this.banks}  className={`s5-banks ${name.box === 1 ? "click" : ""}`}>

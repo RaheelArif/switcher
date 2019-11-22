@@ -1,12 +1,15 @@
 import React from 'react';
 import './contactus.css'
-
+import Footer from "../Footer/footer";
+import Header from "../header/Header"
 
 class ContactUs extends React.Component{
 
 
   render(){
     return(
+      <div className="my-contact-us">
+<Header />
       <section className="contact-us-section">
         <div className="container contact-us-con">
           <h3 className="contactus-heading">we are here to help</h3>
@@ -30,6 +33,8 @@ class ContactUs extends React.Component{
           </div>
         </div>
       </section>
+      <Footer />
+      </div>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import NewMessageForm from './newMessage';
-import logo from "./images/logo.png"
+import logo from "./images/logo-6.png"
 import { connect } from "react-redux"
 import { List, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
 class Chat extends React.Component {
@@ -81,19 +81,14 @@ class Chat extends React.Component {
             <div>
                 <div class="header-spacer">
 
-                    <img style={{ width: "80%", marginTop: "20px" }} src={logo} alt logo />
+                    <img className="tab-icon"  src={logo} alt logo />
                 </div>
                 <div className="container">
                     <div className="row">
                         <div className="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
-                            style={{ display: "flex", flexDirection: "column", justifyItems: "center" }}
+                            style={{ display: "flex",border:"1px solid black", flexDirection: "column", justifyItems: "center",  }}
                         >
-                            <div><div
-                            // style={{ backgroundColor: "white", width: "100%", height: "0px", zIndex: 2, position: "relative", display: "flex", alignItems: "center", boxShadow: "0 1px 0 rgba(6,6,7,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(6,6,7,0.025)" }}
-                            >
-
-
-                            </div>
+                            <div>
                                 <div
                                     style={{
                                         height: "278px", backgroundColor: "white", display: "flex", flexDirection: "column", alignItems: "center", width: "97%",

@@ -9,6 +9,7 @@ margin-top: 60px
     font-size: 45px;
     color: rgb(54, 53, 53);
     margin-top: 90px;
+    z-index: 10;
 }
 .s5-container{
     margin-top: 130px;
@@ -79,3 +80,43 @@ font-size: 36px;
 .tick{
     list-style-image: url("./images//tick.png") !important;
 }
+.s5bg{
+    color: rgb(243, 243, 243);
+    font-size: 130px;
+    font-weight: 700;
+    width: 650px;
+    line-height: 1em;
+    left:  0;
+    position: absolute;
+    z-index: 1;
+    margin: 120px 0px 0px 100px;
+}
+@media screen and (max-width: 1070px) {
+    .s5-container {
+flex-wrap: wrap;
+padding:0px 186px;
+        }
+        
+  }
+  @media screen and (max-width: 800px) {
+
+    .s5bg{
+        font-size: 70px;
+        width: 300px;
+        margin: 150px 0px 0px 100px;
+    } 
+    .s5-container {
+        flex-wrap: wrap;
+        padding:0px 60px;
+                }
+                
+    } 
+    @media screen and (max-width: 500px) {
+
+ 
+        .s5-container {
+            padding:0px 0px;
+                    }
+                    
+        }  
+  

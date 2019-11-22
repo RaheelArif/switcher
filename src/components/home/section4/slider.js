@@ -11,6 +11,7 @@ export default () => {
   return (
     <div className="slider-main-c" style={{ padding: `0 ${chevronWidth}px` }}>
       <ItemsCarousel
+      disableSwipe={false}
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
         numberOfCards={3}

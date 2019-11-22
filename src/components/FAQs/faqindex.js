@@ -1,7 +1,8 @@
 import React from "react";
 import FAQs from "./faqs";
 import "./faqs.css";
-
+import Header from "../header/Header";
+import Footer from "../Footer/footer"
 class FAQIndex extends React.Component {
   render() {
     var faqs = [
@@ -42,25 +43,29 @@ class FAQIndex extends React.Component {
       }
     ];
     return (
-      <section className="faq-section">
-        <div className="container faq-con">
-          <div className="faq-heading">
-            {/* <h1>FAQs</h1> */}
-            <h6>Frequently Asked Questions</h6>
+      <div className="fa1-my-bg">
+<Header />
+        <section className="faq-section">
+          <div className="container faq-con">
+            <div className="faq-heading">
+              {/* <h1>FAQs</h1> */}
+              <h6>Frequently Asked Questions</h6>
+            </div>
+            <div>
+              {faqs.map((value, index) => {
+                return (
+                  <FAQs
+                    collapseClass={"b" + index}
+                    question={value.question}
+                    answer={value.answer}
+                  />
+                );
+              })}
+            </div>
           </div>
-          <div>
-            {faqs.map((value, index) => {
-              return (
-                <FAQs
-                  collapseClass={"b" + index}
-                  question={value.question}
-                  answer={value.answer}
-                />
-              );
-            })}
-          </div>
-        </div>
-      </section>
+        </section>
+        <Footer />
+      </div>
     );
   }
 }

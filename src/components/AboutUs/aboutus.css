@@ -1,11 +1,30 @@
+.aboutut-r{
+     background-image: url("./images//About.png");;
+     background-size: 100% 100%;
+}
 .aboutus-section{
-    margin-top:50px;
-    margin-bottom:50px; 
+    margin-top:40px;
+    margin-bottom:50px;
+}
+.about-r{
+    color: white;
+    margin-left: 20px;
+    font-size: 90px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.us-r{
+    font-size: 90px;
+    color: rgb(66, 66, 66);
+    margin: -30px 0px 0px 250px;
+    padding-top: 0px;
 }
 .about-con{
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2) ;
     border-radius: 8px;
     padding: 60px 0;
+    background-color: rgba(255, 255, 255, 0.9); 
+
 }
 .left-content{
     margin: 30px 0;
@@ -21,6 +40,7 @@
     width: 100%;
     height: auto;
 }
+
 .right-content h6{
     font-family: 'Pacifico', cursive;
     font-size: 20px;
@@ -32,4 +52,53 @@
 }
 .right-content a{
     text-decoration: underline;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .ab-2{
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .right-content{
+        background-color: rgba(122, 122, 122, 0.2);
+        height: 350px;
+        overflow-y: scroll;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    #style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 7px;
+    background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #fd9700;;
+}
+
+    .right-content p{
+        padding:0px ;
+        font-weight: 400;
+        font-size: 15px;
+        
+    }
+    .ab-2{
+       width: 150px !important;
+       height: 150px;
+    }
+    .ab-1{
+        display:none ;
+    }
 }
