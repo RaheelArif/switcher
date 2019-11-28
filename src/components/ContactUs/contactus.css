@@ -1,8 +1,15 @@
 .contact-us-section{
   margin-top:50px;
   margin-bottom:50px; 
+ 
+
+}
+.my-contact-us{
+  background-image: linear-gradient( to  left ,   white, orange);
+
 }
 .contact-us-con{
+  background-color: white;
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2) ;
     border-radius: 8px;
     padding: 60px 0;
@@ -23,6 +30,7 @@
 
 }
 .contactus-row{
+
   text-align: center;
   margin:0px 0 0 0;
 }

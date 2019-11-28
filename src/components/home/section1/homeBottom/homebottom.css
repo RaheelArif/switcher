@@ -1,7 +1,7 @@
 .home-bottom-content {
-  width: 300px;
+  width: 320px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: right;
 }
 .home-bottom-p {
   font-weight: 600;
@@ -9,6 +9,21 @@
 }
 .home-bottom-button {
   background-color: #fd9700;
+  color: white;
+  border-radius: 8px;
+  padding: 6px 16px;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 3px  rgb(235, 234, 234);
+  width: auto;
+  text-align: center;
+}
+.home-bottom-content2 {
+  width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.home-bottom-button2 {
+  background-color: #1b9c01;
   color: white;
   border-radius: 8px;
   padding: 6px 16px;

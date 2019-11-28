@@ -1,6 +1,5 @@
 .aboutut-r{
-     background-image: url("./images//About.png");;
-     background-size: 100% 100%;
+    background-image: linear-gradient( to  left ,   white, orange);
 }
 .aboutus-section{
     margin-top:40px;
@@ -23,7 +22,7 @@
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2) ;
     border-radius: 8px;
     padding: 60px 0;
-    background-color: rgba(255, 255, 255, 0.9); 
+    background-color: rgba(255, 255, 255, 0.8); 
 
 }
 .left-content{
@@ -55,7 +54,6 @@
 }
 
 @media screen and (min-width: 1000px) {
-
     .ab-2{
         display: none;
     }

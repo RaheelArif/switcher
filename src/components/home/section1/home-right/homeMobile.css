@@ -13,7 +13,7 @@
   background: url("./images/ipad.png");
   background-size: 100% 100%;
   box-shadow: 0px 0px 15px grey;
-  border-radius: 30px;
+  border-radius: 35px;
   margin-bottom: 20px;
 }
 .tab-icon{
@@ -140,6 +140,15 @@ height: 80px;
   color: gray;
   font-size: 0.75rem;
   */
+}
+.mesg-area-r{
+  height: 240px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  margin-top: -10px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .message-content0 {
   width: 130px;
