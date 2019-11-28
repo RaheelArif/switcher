@@ -2,12 +2,17 @@ import React from "react";
 import TOB from "./tob";
 import tob from './tob-details'
 import { Link } from "react-router-dom";
+import Header from "../header/Header";
+import Footer from "../Footer/footer"
 import "./tob.css";
 
 class TOBIndex extends React.Component {
   render() {
     
     return (
+      <div>
+        <Header />
+
       <section className="tob-section">
         <div className="container tob-con">
         <div className="tob-heading">
@@ -26,7 +31,10 @@ class TOBIndex extends React.Component {
           })}
         </div>
         </div>
+        <Footer />
       </section>
+      </div>
+
     );
   }
 }

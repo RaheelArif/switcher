@@ -9,8 +9,8 @@ export default class whySwicthes extends Component {
             <div className="why-sw">
                 <Header />
                 <img className="why-img" src={why} alt=""/>
-                <h1 className="about-r">About</h1>
-          <h1 className="us-r">US</h1>
+                <h1 className="about-r">Why </h1>
+          <h1 className="about-r">Switcher</h1>
                 <div className="ws-container">
                     <div className="ws-p1">The simple fact is that many people can save thousands of euros each year by switching their mortgage, but they chose not to and instead pay extra hard-earned money to their mortgage provider than they have to. </div>
                     <div className="ws-c2">

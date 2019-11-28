@@ -39,13 +39,13 @@ class Footer extends React.Component {
               <h6 className="f-h6">Site Map</h6>
               <ul>
                 <li>
-                  <Link to="/aboutus">About us</Link>
+                  <Link className="footer-f" to="/aboutus">About us</Link>
                 </li>
                 <li>
-                  <a href="tel:+92300XXXXXXX">Why Switch?</a>
+                  <a className="footer-f" href="tel:+92300XXXXXXX">Why Switch?</a>
                 </li>
                 <li>
-                  <a href="tel:+92300XXXXXXX">FAQ</a>
+                  <a className="footer-f" href="tel:+92300XXXXXXX">FAQ</a>
                 </li>
               </ul>
             </div>
@@ -56,12 +56,12 @@ class Footer extends React.Component {
               <h6 className="f-h6">Legal</h6>
               <ul>
                 <li>
-                  <Link target="_blank" to="/data-privacy-notice">
+                  <Link className="footer-f" target="_blank" to="/data-privacy-notice">
                     Data Privacy Notice
                   </Link>
                 </li>
                 <li>
-                  <Link target="_blank" to="/terms-of-business">
+                  <Link className="footer-f" target="_blank" to="/terms-of-business">
                     Terms of Business
                   </Link>
                 </li>

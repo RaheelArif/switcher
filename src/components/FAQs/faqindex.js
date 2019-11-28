@@ -43,15 +43,15 @@ class FAQIndex extends React.Component {
       }
     ];
     return (
-      <div className="fa1-my-bg">
+      <div className="fa1-my-bg faq-faq">
 <Header />
         <section className="faq-section">
-          <div className="container faq-con">
+          <div style={{backgroundColor:"white"}} className="container faq-con">
             <div className="faq-heading">
               {/* <h1>FAQs</h1> */}
               <h6>Frequently Asked Questions</h6>
             </div>
-            <div>
+            <div >
               {faqs.map((value, index) => {
                 return (
                   <FAQs

@@ -56,8 +56,9 @@ font-size: 34px;
 .section3-c{
     display: flex;
     justify-content: center;
-    padding-top: 30px !important;
+    padding-top: 200px !important;
     align-items: center;
+    
 }
 .shadow{
     display: flex;

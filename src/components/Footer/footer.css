@@ -53,10 +53,16 @@
   /* background: red; */
 }
 .social-icon i:hover {
-  color: blue;
+  color: #fd9700;
   cursor: pointer;
+  transition: 0.5s;
   /* width: 40px; */
   /* height: 40px; */
+}
+.footer-f:hover{
+  color: #fd9700;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .brief {
