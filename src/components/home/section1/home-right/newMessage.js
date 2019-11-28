@@ -18,7 +18,7 @@ class NewMessageForm extends React.Component {
         e.preventDefault();
         const { text } = this.state
         const textMessage = {
-            message: text,
+            message: "text",
             index: 1
         }
 

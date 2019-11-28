@@ -1,5 +1,5 @@
 import React from 'react';
-import NewMessageForm from './newMessage';
+// import NewMessageForm from './newMessage';
 import logo from "./images/logo-6.png"
 import { connect } from "react-redux"
 import { List, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
@@ -51,7 +51,7 @@ class Chat extends React.Component {
                     // className={item.user._id !== "234k3jjk" ?"message":"my_message"}
                     >
                         <div className={`message-content${item.index}`}>
-                            <p style={{ fontSize: "12px", paddingBottom: "20px" }}> {item.message} </p>
+                            <p style={{ fontSize: "16px", paddingBottom: "26px" }}> {item.message} </p>
                         </div>
 
                     </div>

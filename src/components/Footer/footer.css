@@ -124,3 +124,20 @@
   padding: 17px 0 0 0;
   line-height: 10px;
 }
+.footer-section .wdd-toggle{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+
+}
+.footer-section .wdd-toggle:focus{
+  box-shadow: none;
+}
+.footer-section .warnings-ddm{
+width: 99.2%;
+padding:0; 
+background-color: rgba(0, 0, 0, 0.9);
+margin: 0;
+}

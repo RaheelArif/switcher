@@ -1,18 +1,18 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-import { Collapse } from "reactstrap";
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
 import Logo from "./images/logo.png";
 import "./footer.css";
 
 class Footer extends React.Component {
-  state={
-    collapse:false
+  state = {
+    collapse: false
   }
-  toggle=()=>{
-    this.setState({collapse:!this.state.collapse})
-    setTimeout(function(){
+  toggle = () => {
+    this.setState({ collapse: !this.state.collapse })
+    setTimeout(function () {
       // window.scrollTo(0, document.body.scrollHeight)
-    },150)
+    }, 150)
   }
   render() {
     return (
@@ -39,7 +39,7 @@ class Footer extends React.Component {
               <h6 className="f-h6">Site Map</h6>
               <ul>
                 <li>
-                  <Link  to="/aboutus">About us</Link>
+                  <Link to="/aboutus">About us</Link>
                 </li>
                 <li>
                   <a href="tel:+92300XXXXXXX">Why Switch?</a>
@@ -108,9 +108,21 @@ class Footer extends React.Component {
             </div>
           </div>
         </div>
-          
-          <Collapse className="coll" isOpen={this.state.collapse}>
-          <div className=" warnings">
+
+        {/* <Collapse className="coll" isOpen={this.state.collapse}> */}
+        <Dropdown isOpen={this.state.collapse} toggle={this.toggle}>
+          <DropdownToggle className="wdd-toggle">
+          <div className="warning-toggle">
+          <p>Warnings</p>
+
+          <p id="wn">
+
+            {this.state.collapse ? <i className="fas fa-chevron-up"></i> : <i className="fas fa-chevron-down"></i>}
+          </p>
+        </div>
+          </DropdownToggle>
+          <DropdownMenu className="warnings-ddm">
+          <div className="warnings">
             <div className="container">
               <p>
                 Warning: If you do not meet the repayments on your credit
@@ -134,18 +146,8 @@ class Footer extends React.Component {
               <p>Warning: The cost of your monthly repayment may increase.</p>
             </div>
           </div>
-          </Collapse >
-          
-          
-        
-          <div className="warning-toggle" onClick={this.toggle}>
-            <p>Warnings</p>
-
-            <p id="wn">
-              
-              {this.state.collapse?<i className="fas fa-chevron-up"></i>:<i className="fas fa-chevron-down"></i>}
-            </p>
-          </div>
+          </DropdownMenu>
+        </Dropdown>
         
       </section>
     );

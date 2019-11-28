@@ -1,11 +1,17 @@
+import React from 'react'
 import { chatAction } from "../action/types"
 const initailState = {
     chat: {
         messages: [
             {
-                message: "Let's start with a few details. This should only take a couple of minutes.",
+                message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> Hi there, <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> let’s figure out how much we can save you <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> on the cost of you home. </p>,
+                index: 0
+            },
+            {
+                message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> Don’t worry  this will only take a few seconds <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /></p>,
                 index: 0
             }
+
         ]
     }
 }
