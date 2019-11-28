@@ -86,21 +86,16 @@ class Chat extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"
-                            style={{ display: "flex",border:"1px solid black", flexDirection: "column", justifyItems: "center",  }}
+                            style={{ display: "flex", flexDirection: "column", justifyItems: "center",  }}
                         >
                             <div>
-                                <div
-                                    style={{
-                                        height: "278px", backgroundColor: "white", display: "flex", flexDirection: "column", alignItems: "center", width: "97%",
-                                        marginLeft: "3px"
-                                    }}
-                                >
+                                <div className="mesg-area-r">
                                     <div
                                         className="mainchatbox"
                                     >
                                         <List
                                             width={999}
-                                            height={260}
+                                            height={230}
                                             rowCount={chat.messages.length}
                                             rowHeight={({ index }) => { return chat.messages[index].message.length * 4 + 20 }}
                                             style={{ width: "100%", marginTop: "10px", outline: "none" }}
