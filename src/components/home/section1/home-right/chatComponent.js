@@ -44,14 +44,12 @@ class Chat extends React.Component {
             >
 
                 <div
-                    style={style}
+                    style={{display:"flex", flexDirection: item.index?"row-reverse":"row",...style }}
                 >
-                    {/* {chat.messages[index]} */}
-                    <div className="message"
-                    // className={item.user._id !== "234k3jjk" ?"message":"my_message"}
+                    <div className="message" 
                     >
                         <div className={`message-content${item.index}`}>
-                            <p style={{ fontSize: "16px", paddingBottom: "26px" }}> {item.message} </p>
+                            <p style={{ fontSize: "12px", }}> {item.message} </p>
                         </div>
 
                     </div>
@@ -95,10 +93,10 @@ class Chat extends React.Component {
                                     >
                                         <List
                                             width={999}
-                                            height={230}
+                                            height={280}
                                             rowCount={chat.messages.length}
                                             rowHeight={({ index }) => { return chat.messages[index].message.length * 4 + 20 }}
-                                            style={{ width: "100%", marginTop: "10px", outline: "none" }}
+                                            style={{ width: "100%", outline: "none" }}
                                             deferredMeasurementCache={this.cache}
                                             rowHeight={this.cache.rowHeight}
                                             rowRenderer={this.rowRenderer}

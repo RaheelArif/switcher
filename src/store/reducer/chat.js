@@ -4,11 +4,11 @@ const initailState = {
     chat: {
         messages: [
             {
-                message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> Hi there, <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> let’s figure out how much we can save you <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> on the cost of you home. </p>,
+                message: <p><img className="chat-icon" src="images/icon.png" alt="chat-icon1" /> Hi there, <img className="chat-icon" src="images/shake.png" alt="chat-icon1" /> let’s figure out how much we can save you <img className="chat-icon" src="images/dolor.png" alt="chat-icon1" /> on the cost of you home. </p>,
                 index: 0
             },
             {
-                message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> Don’t worry  this will only take a few seconds <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /></p>,
+                message: <p><img className="chat-icon" src="images/icon.png" alt="chat-icon1" /> Don’t worry  this will only take a few seconds <img className="chat-icon" src="images/time.png" alt="chat-icon1" /></p>,
                 index: 0
             }
 

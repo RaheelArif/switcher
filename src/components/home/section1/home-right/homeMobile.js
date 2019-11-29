@@ -23,20 +23,23 @@ class HomeMobile extends React.Component {
         ]
         ,
         askquestions: [
-            { index: 0, message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" />What's the value of your property?</p> },
-            { index: 0, message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" />Whats the balance of your mortgage? </p> },
-            { index: 0, message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> How long have you left <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> to pay it off ?  </p> },
-            { index: 0, message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> Are you looking to borrow more money ?
-            <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" />
-            <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" />
-            <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" />
+            { index: 0, message: <p><img className="chat-icon" src="images/icon.png" alt="chat-icon1" />What's the value of your property?
+           <img className="chat-icon" src="images/home.png" alt="chat-icon1" /> </p> },
+            { index: 0, message: <p><img className="chat-icon" src="images/icon.png" alt="chat-icon1" />Whats the balance of your mortgage? 
+            <img className="chat-icon" src="images/line.png" alt="chat-icon1" /></p> },
+            { index: 0, message: <p><img className="chat-icon" src="images/icon.png" alt="chat-icon1" /> How long have you left <img className="chat-icon" src="images/mind.png" alt="chat-icon1" /> to pay it off ?  </p> },
+            { index: 0, message: <p><img className="chat-icon" src="images/icon.png" alt="chat-icon1" /> Are you looking to borrow more money ?
+
+            <img className="chat-icon" src="images/car.png" alt="chat-icon1" />
+            <img className="chat-icon" src="images/uma.png" alt="chat-icon1" />
+            <img className="chat-icon" src="images/ring.png" alt="chat-icon1" />
             </p> },
-            { index: 0, message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> What’s your monthly payment ? </p> },
-            { index: 0, message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> Okay Give me a minut <img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> </p> },
-            { index: 0, message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" /> Oh Yeah!!!  </p> },
-            { index: 0, message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" />  </p> },
-            { index: 0, message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" />  </p> },
-            { index: 0, message: <p><img className="chat-icon" src="images/icons/grin-tongue-regular.svg" alt="chat-icon1" />  </p> },
+            { index: 0, message: <p><img className="chat-icon" src="images/icon.png" alt="chat-icon1" /> What’s your monthly payment ?  <img className="chat-icon" src="images/mony.png" alt="chat-icon1" /> </p> },
+            { index: 0, message: <p><img className="chat-icon" src="images/icon.png" alt="chat-icon1" /> Okay Give me a minut <img className="chat-icon" src="images/loading.jpg" alt="chat-icon1" /> </p> },
+            { index: 0, message: <p><img className="chat-icon" src="images/icon.png" alt="chat-icon1" /> Oh Yeah!!!  </p> },
+            { index: 0, message: <p><img className="chat-icon" src="images/cap.png" alt="chat-icon1" />  </p> },
+            { index: 0, message: <p><img className="chat-icon" src="images/bottle.png" alt="chat-icon1" />  </p> },
+            { index: 0, message: <p><img className="chat-icon" src="images/water.png" alt="chat-icon1" />  </p> },
             
         ]
     }
@@ -71,7 +74,8 @@ class HomeMobile extends React.Component {
         if (index < 6) {
             if (this.state.index === 0 ) {
                 const array = [this.state.askquestions[index]]
-                this.props.dispatch(chatPush(array))
+                setTimeout(()=>this.props.dispatch(chatPush(array)),1000)
+                
             } else {
                 if(this.state.index>=5)
                 { 

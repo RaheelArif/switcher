@@ -9,8 +9,8 @@
 .mobile-div {
   width: 520px;
   height: 370px;
-  padding:0px 80px ;
-  background: url("./images/ipad.png");
+  padding:0px 31px ;
+  background: url("./images/mobile.jpg");
   background-size: 100% 100%;
   box-shadow: 0px 0px 15px grey;
   border-radius: 35px;
@@ -19,6 +19,7 @@
 .tab-icon{
 width: 80px;
 height: 80px;
+z-index: 200;
 
 }
 .mbl-input input{
@@ -30,7 +31,7 @@ height: 80px;
   outline: none;;
 }
 .chat-icon{
-  width: 35px;
+  width: 20px;
 }
 @media screen and (max-width: 1111px) {
   .mobile-div {
@@ -120,55 +121,27 @@ height: 80px;
 }
 
 .message {
-  /* width: 97%; */
-  /* height: 360px; */
-  width: 150px;
-  /* height: 110px; */
   padding: 10px;
   display: flex;
+  width: 80%;
   /* color: black; */
   flex-wrap: wrap;
-  /* align-items: center;
-  background-color: yellow; 
-}
 
-.c {
-  max-width: 70%;
-}
-
-.message-time {
-  padding-left: 5px;
-  padding-right: 5px;
-
-  color: gray;
-  font-size: 0.75rem;
-  */
 }
 .mesg-area-r{
-  height: 240px;
+  padding-top: 30px;
+  height: 320px;
   background-color: rgb(255, 255, 255);
   display: flex;
-  margin-top: -10px;
+  margin-top: -52px;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 .message-content0 {
-  width: 130px;
-  /* height: 90px; */
+  width: 80%;
   padding: 5px;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
-    0% 75%
-  );
-  border: rgb(52, 88, 151) 1px solid;
-  /* display: flex; */
-  /* margin-top: 10px; */
+  clip-path: polygon(50% 0%, 100% 0, 100% 94%, 89% 100%, 76% 95%, 0 95%, 0 0);
   color: white;
   flex-wrap: wrap;
   margin-left: -8px;
@@ -176,8 +149,7 @@ height: 80px;
   background-color: rgb(68, 114, 196);
 }
 .message-content1 {
-  width: 150px;
-  /* height: 90px; */
+  width: 80%;
   padding: 5px;
   clip-path: polygon(
     0% 0%,
@@ -188,28 +160,14 @@ height: 80px;
     10% 91%,
     0 91%
   );
-  border: rgb(52, 88, 151) 1px solid;
-
+  display: flex;
   margin-left: 10px;
   color: black;
   flex-wrap: wrap;
   align-items: center;
   background-color: rgb(230, 243, 47);
 }
-/*
-.message-text {
-  text-align: justify;
-  text-justify: inter-word;
-  width: 50%;
-}
-.name {
-  display: inline;
-  font-weight: bold;
-}
 
-.newMessageForm {
-  width: 90%;
-  /* background-color: aqua; */
 
 .newMessageForm .input {
   height: 10px;

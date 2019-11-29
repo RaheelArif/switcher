@@ -15,7 +15,7 @@ class HomeVideo extends React.Component {
                 <div className="home-left ">
                     <p>Watch our video to see easy it is to switch and save on your mortgage</p>
                     <div className="video-div">
-                     <video className="sw-video" src={Video} autoPlay preload controls></video>
+                     <video className="sw-video" src={Video} autoPlay  preload controls></video>
                     </div>
                 </div>
 

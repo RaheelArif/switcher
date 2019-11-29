@@ -21,8 +21,9 @@ class NewMessageForm extends React.Component {
             message: "text",
             index: 1
         }
-
-        this.props.messageSend({ ...textMessage })
+        setTimeout(()=>{
+            this.props.messageSend({ ...textMessage })
+        },500)
         this.setState({ text: "" });
     }
 
