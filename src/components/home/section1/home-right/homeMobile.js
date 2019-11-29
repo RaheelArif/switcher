@@ -135,13 +135,13 @@ class HomeMobile extends React.Component {
                     <div className="mobile-div mx-auto">
                         <HomeChat />
                     </div>
-                    <div>
+                    <div className="letcheckbutton">
                         { this.state.index<=6 &&  question.type === "input"  && <div className="home-bottom-content mbl-input mx-auto" style={{ display: "flex", flexDirection: "row", alignItems: "baseline", justifyContent: "center", }}>
                             <input type={question.type}
                                 placeholder={question.placeholder} className="home-bottom-button  text-center" onChange={this.whanchange} style={{ backgroundColor: "white", color: "black" }} value={question.message} />
 
                         </div>}
-                        <div className="home-bottom-content mx-auto">
+                        <div className="home-bottom-content mx-auto" style={{marginBottom:"20px"}}>
                             <input type="button" onClick={this.changeitem} className="home-bottom-button text-center" value={!this.state.index ? "OK let's go" : "submit"} />
                         </div>
 

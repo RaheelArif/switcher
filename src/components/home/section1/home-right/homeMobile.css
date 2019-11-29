@@ -34,7 +34,37 @@ z-index: 200;
   width: 20px;
 }
 @media screen and (max-width: 1111px) {
+  .section1-c{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
   .mobile-div {
+    width: 330px;
+    height: 370px;
+    margin-left: 100px;
+    background: url("");
+    background-color: white;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home-right{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+  .letcheckbutton{
+    margin: 10px;
+  }
+  .section1-c{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+  .mobile-div {
+    margin-bottom: 20px;
+    width: 330px;
+  height: 370px;
     background: url("");
     background-color: white;
   }
