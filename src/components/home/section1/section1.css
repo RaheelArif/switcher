@@ -20,8 +20,24 @@ overflow: hidden !important;
     justify-content: center;
     flex-direction: row; 
 }
+.right-btn{
+  background-color: grey ;
+  transition: 0.5s;
+  border-radius: 50%;
+  padding: 10px;
+  
+}
 
+.left-btn{
+  background-color: grey;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari prior 9.0 */
+  transform: rotate(180deg); /* Standard syntax */
 
+}
 .element-animation{
     animation: animationon ease-in-out 1s;
     animation-iteration-count: 1;
