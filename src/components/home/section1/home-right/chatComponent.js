@@ -76,7 +76,7 @@ class Chat extends React.Component {
 
         const { chat } = this.state
         return (
-            <div>
+            <div >
                 <div class="header-spacer">
 
                     <img className="tab-icon"  src={logo} alt logo />

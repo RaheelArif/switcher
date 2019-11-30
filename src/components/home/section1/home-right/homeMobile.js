@@ -129,7 +129,7 @@ class HomeMobile extends React.Component {
     render() {
         const question = this.state.questions[this.state.index]
         return (    
-            <div className="col-lg-6 home-mbl">
+            <div className={`col-lg-6 home-mbl ${this.props.class}` } >
                 <div className="home-right ">
                     <p className="hr-p">Lets see how much you are overpaying your bank for you mortgage </p>
                     <div className="mobile-div mx-auto">

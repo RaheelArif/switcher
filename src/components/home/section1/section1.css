@@ -1,9 +1,70 @@
 .section1-c{
 width: 100%;
 height: auto;
+overflow: hidden !important;
 /* background-color: rgba(192, 81, 81, 0.6); */
 }
 .section1-c2{
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    height: 590px;
+
 }
+.section1-c1-5{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; 
+}
+
+
+.element-animation{
+    animation: animationon ease-in-out 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode:forwards; /*when the spec is finished*/
+    opacity:1;
+
+  }
+  
+  .element-animation1{
+    animation: slide-right ease 2s;
+    /* animation-iteration-count: 1; */
+    transform-origin: 50% 50%;
+    animation-fill-mode:forwards; /*when the spec is finished*/
+    
+ 
+  }
+
+@keyframes animationon{
+    0% {
+      opacity:1;
+      transform:  translate(170%,0px)  ;
+    }
+  
+    100% {
+      opacity:1;
+      transform:  translate(0px,0px)  ;
+    }
+  }
+  
+
+
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+              display: flex;
+
+    }
+    100% {
+      -webkit-transform: translateX(170%);
+              transform: translateX(170%);
+              display: none;
+              
+    }
+  }
