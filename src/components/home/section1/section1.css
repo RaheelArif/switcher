@@ -68,3 +68,47 @@ overflow: hidden !important;
               
     }
   }
+
+
+  @media screen and (max-width: 1111px) {
+    .animate_button{
+      display: none;
+    }
+    .animate-on .animate-of{
+      display: block;
+      animation-duration: 0s;
+    }
+    .section1-c2{
+      display: flex;
+      width: 100% !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 1133px;
+      
+    }
+    .element-animation{
+      animation-name: unset;
+      left: 0px;
+      opacity: 1;
+    }
+    
+    .element-animation1{
+      animation-name: unset;
+      
+      left: 0px;
+      opacity: 1;
+    }
+    .section1-c{
+      width: 100%;
+      height: auto;
+      
+  }
+  .section1-c1-5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+.displayClass{
+  position:relative !important;
+}
+}

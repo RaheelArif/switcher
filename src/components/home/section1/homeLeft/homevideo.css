@@ -5,7 +5,9 @@
   /* background-color: aqua; */
 
 }
-
+.displayClass{
+  position: absolute !important;
+}
 .home-left p{
   margin-left: 80px;
   font-size: 20px;
@@ -26,20 +28,20 @@
   border-radius: 20px;
 }
 
+
+
 @media screen and (max-width: 780px) {
   .home-left {
     width: 340px !important;
     
     /* background-color: aqua; */
-  
   }
+  
   .mx-auto{
     padding: 0px !important;
     margin: 0px !important;
   }
-  .col-lg-6{
-    padding: 0px;
-  }
+  
   .home-left p{
     margin-left: 0px;
     font-size: 20px;
@@ -49,4 +51,30 @@
     margin-left: 0px;
     /* background-color: aqua; */
   }
+}
+
+.animate-on{
+  animation: AnimationOn 1s linear ;
+  opacity:1;
+}
+
+.animate-of{
+  animation: AnimationOf 1s linear ;
+  opacity:0;
+}
+@keyframes AnimationOn { /* flame pulses */
+  0%   { opacity:0; }
+
+  100% { opacity:1; }
+}
+
+@keyframes AnimationOf { /* flame pulses */
+  0%   { opacity:1; }
+  70%   { opacity:.7; }
+  100%  { opacity:0; }
+  
+}
+.animate-flicker {
+    opacity:1;  
+    animation: flickerAnimation 1s infinite;
 }

@@ -19,8 +19,8 @@ export default class Section1 extends Component {
             
            <HomeRight class={this.state.toggle?"element-animation1":"element-animation"} />
           </div>
-          <div style={{ width: "10%" }}>
-            <button style={{ width: "100px", height: "50px" }} onClick={()=>this.setState({toggle:!this.state.toggle})}> change</button>
+          <div className="animate_button" style={{ width: "10%" }}>
+            <button  style={{ width: "100px", height: "50px" }} onClick={()=>this.setState({toggle:!this.state.toggle})}> change</button>
           </div>
         </div>
         <HomeBottom />
