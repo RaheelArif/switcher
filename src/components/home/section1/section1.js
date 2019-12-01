@@ -10,6 +10,8 @@ export default class Section1 extends Component {
         toggle:true
     }
   render() {
+let btn ;
+    btn = this.state.toggle === true ? btn = "left-btn" : btn = "right-btn"; 
     return (
       <div className="section1-c">
         <div className="section1-c1-5">
@@ -19,10 +21,12 @@ export default class Section1 extends Component {
             
            <HomeRight class={this.state.toggle?"element-animation1":"element-animation"} />
           </div>
-          <div className="animate_button" style={{ width: "10%" }}>
-            <button  style={{ width: "100px", height: "50px" }} onClick={()=>this.setState({toggle:!this.state.toggle})}> change</button>
+          
+          <div  className="animate_button" style={{ width: "10%" }}>
+            <img src={require("./arrow.png")} className={ btn} onClick={()=>this.setState({toggle:!this.state.toggle })} /> 
           </div>
         </div>
+      
         <HomeBottom />
         <Header2 />
       </div>
@@ -30,7 +34,4 @@ export default class Section1 extends Component {
   }
 }
 
-{
-  /* <HomeLeft />
-<HomeRight/> */
-}
+
