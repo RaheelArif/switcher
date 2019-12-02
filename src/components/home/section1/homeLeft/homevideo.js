@@ -16,8 +16,8 @@ class HomeVideo extends React.Component {
              
               ${this.props.show?"animate-on":"animate-of"}`} >
                 <div className="home-left  ">
-                    <p style={{height:"90px"}}>
-                        {this.props.show &&  "Watch our video to see easy it is to switch and save on your mortgage"}
+         
+                 <p style={{height:"90px"}}>
                         </p>
                     <div className="video-div">
                      <video className="sw-video" src={Video}   preload controls></video>

@@ -2,10 +2,12 @@
   width: 320px;
   margin-bottom: 20px;
   text-align: right;
+ 
 }
 .home-bottom-p {
   font-weight: 600;
   font-size: 16px;
+  color: black;
 }
 .home-bottom-button {
   background-color: #fd9700;
@@ -20,7 +22,9 @@
 .home-bottom-content2 {
   width: 300px;
   margin-bottom: 20px;
-  text-align: center;
+  position: absolute;
+  left:20px;
+  bottom: -50px;
 }
 .home-bottom-button2 {
   background-color: #1b9c01;

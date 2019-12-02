@@ -11,9 +11,10 @@ class HomeBottom extends React.Component{
 
     render(){
         return(
-            <div className="col-lg-12">
-                <div className="home-bottom-content2 mx-auto">
-                <p className="home-bottom-p">Why overpay? Switcheroo to a better rate </p>
+            <div >
+                  <div className={document.getElementById("root").style.width > 1100 ?"home-bottom-content":"home-bottom-content2"}>
+                <p className="home-bottom-p">Why overpay?</p>
+                <p className="home-bottom-p">Switcheroo to a better rate </p>
                 <button className="home-bottom-button2 text-center">Start Saving</button>
                 </div>
             </div>
