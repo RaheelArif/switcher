@@ -43,7 +43,7 @@ class FAQIndex extends React.Component {
       }
     ];
     return (
-      <div className="fa1-my-bg faq-faq">
+      <div className="fa1-my-bg faq-faq aboutut-r">
 <Header />
         <section className="faq-section">
           <div style={{backgroundColor:"white"}} className="container faq-con">

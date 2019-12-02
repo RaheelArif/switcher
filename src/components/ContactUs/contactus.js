@@ -8,7 +8,7 @@ class ContactUs extends React.Component{
 
   render(){
     return(
-      <div className="my-contact-us">
+      <div className="my-contact-us aboutut-r">
 <Header />
       <section className="contact-us-section">
         <div className="container contact-us-con">

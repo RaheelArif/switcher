@@ -6,6 +6,24 @@ padding: 40px;
 border-radius: 20px;
 
 }
+.why-why-r{
+    color: white;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 60px;
+}
+.why-sw-r{
+    color: white;
+    margin-top: 0px;
+    margin-left: 50px;
+    font-size: 60px;
+}
+.why-sw-r span{
+    color: black;
+    margin-top: 0px;
+    font-size: 60px;
+}
+
 .whysw-r{
 width: 300px;
 font-size: 110px;
@@ -22,8 +40,7 @@ margin:40px 0px 50px 100px;
    box-shadow: 0px 0px 20px rgb(192, 192, 192);
 }
 .why-sw{
-    background-image: linear-gradient( to  left ,   white, orange);
-    background-size: 100% 100%;
+    /* background-image: linear-gradient( to  left ,   white, orange); */
 }
 @media screen and (max-width: 1180px) {
     .ws-container{

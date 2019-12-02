@@ -6,11 +6,11 @@ import Footer from "../Footer/footer"
 export default class whySwicthes extends Component {
     render() {
         return (
-            <div className="why-sw">
+            <div className="why-sw aboutut-r">
                 <Header />
                 <img className="why-img" src={why} alt=""/>
-                <h1 className="about-r">Why </h1>
-          <h1 className="about-r">Switcher</h1>
+                <h1 className="why-why-r">Why </h1>
+          <h1 className="why-sw-r">Switcher <span>?</span></h1>
                 <div className="ws-container">
                     <div className="ws-p1">The simple fact is that many people can save thousands of euros each year by switching their mortgage, but they chose not to and instead pay extra hard-earned money to their mortgage provider than they have to. </div>
                     <div className="ws-c2">

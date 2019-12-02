@@ -19,20 +19,30 @@
   width: auto;
   text-align: center;
 }
+.home-bottom-button:focus {
+outline: none;
+}
 .home-bottom-content2 {
   width: 300px;
   margin-bottom: 20px;
   position: absolute;
-  left:20px;
-  bottom: -50px;
+  left:40px;
+  bottom: 50px;
+  
 }
 .home-bottom-button2 {
   background-color: #1b9c01;
   color: white;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 6px 16px;
   border: 1px solid transparent;
-  box-shadow: 0px 0px 3px  rgb(235, 234, 234);
   width: auto;
   text-align: center;
 }
+.home-bottom-button2:hover {
+  background-color: #0e5500;
+  color: #fd9700;
+transition: 0.5s;
+border-color: #fd9700;
+}
+

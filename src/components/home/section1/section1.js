@@ -16,7 +16,7 @@ export default class Section1 extends Component {
       <div className="section1-c">
         <div className="section1-c1-5">
           <div className="section1-c2">
-            <div className="textwriten">
+            <div className="textwriten ">
               {!this.state.toggle ? (
                 <p>
                   Lets see how much you are overpaying your bank for you
