@@ -18,12 +18,12 @@ export default class Section1 extends Component {
           <div className="section1-c2">
             <div className="textwriten ">
               {!this.state.toggle ? (
-                <p>
+                <p className="s1-p-c">
                   Lets see how much you are overpaying your bank for you
                   mortgage
                 </p>
               ) : (
-                <p>
+                <p className="s1-p-c">
                   Watch our video to see easy it is to switch and save on your
                   mortgage
                 </p>

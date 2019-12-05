@@ -29,15 +29,15 @@ export default class Section1 extends Component {
                     <div className="c2-info">
                         <div className="c2-info-1">
                             <h1 className="c2-info-h1">Online 24/7</h1>
-                            <p className="c2-info-p">Access your account through our platform and your anytime anywhere on any debicec</p>
+                            <p className="c2-info-p">Access your account through our platform and your anytime anywhere on any debice</p>
                         </div>
                         <div className="c2-info-2">
                             <h1 className="c2-info-h1">Best mortgage rate</h1>
-                            <p className="c2-info-p">Our algorithms will tell you what you can afford and who will probide you the best rate</p>
+                            <p className="c2-info-p">Our algorithms will tell you what you can afford and who will provide you the best rate</p>
                         </div>
                         <div className="c2-info-3">
                             <h1 className="c2-info-h1">Friendly expert support</h1>
-                            <p className="c2-info-p">chat with a frindly member of Simple Mortagaed team to confrim and finalise everything</p>
+                            <p className="c2-info-p">chat with a frindly member of the Swicheroo.ie team to confrim and finalise which mortgage best suits your needs</p>
                         </div>
                         <div className="c2-info-4">
                             <h1 className="c2-info-h1">Completing your mortgage</h1>

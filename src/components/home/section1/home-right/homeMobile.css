@@ -1,6 +1,6 @@
 .home-right {
   width: 300px;
-  /* background: red; */
+  margin-left: 50px;
 }
 .hr-p{
   font-size: 20px;
@@ -14,7 +14,7 @@
   padding-top: 28px;
   background: url("./images/mobile.jpg");
   background-size: 100% 100%;
-  box-shadow: 0px 0px 15px grey;
+  box-shadow: 0px 0px 20px grey;
   border-radius: 35px;
   margin-bottom: 20px;
 }
@@ -51,6 +51,18 @@ margin-bottom:22px ;
 .chat-icon{
   width: 20px;
 }
+@media screen and (max-width: 1411px) {
+
+  .home-right {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 1311px) {
+
+  .home-right {
+    margin-left: 20px;
+  }
+}
 @media screen and (max-width: 1111px) {
   .section1-c{
     display: flex;
@@ -63,6 +75,9 @@ margin-bottom:22px ;
     margin-left: 100px;
     background: url("");
     background-color: white;
+  }
+  .home-right {
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -212,10 +227,12 @@ margin-bottom:22px ;
   );
   display: flex;
   margin-left: 10px;
-  color: black;
+  color: white;
   flex-wrap: wrap;
+  font-weight: 600;
+  font-size: 20px;
   align-items: center;
-  background-color: rgb(230, 243, 47);
+  background-color: grey;
 }
 
 

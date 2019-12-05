@@ -5,10 +5,11 @@
 }
 .easy-steps{
     color: rgb(243, 243, 243);
-    font-size: 130px;
+    font-size: 150px;
     font-weight: 700;
     width: 450px;
 line-height: 1em;
+margin-top: -50px;
 right: 0;
 display: flex;
 justify-content: flex-end;
@@ -19,7 +20,26 @@ justify-content: flex-end;
 .s2-c2{
     display: flex;;
     height: 900px;
-    padding-left: 250px;
+    padding-left: 350px;
+    background-color: white;
+}
+@media screen and (max-width: 1400px) {
+    .s2-c2{
+
+        padding-left: 250px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .s2-c2{
+ 
+        padding-left: 150px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .s2-c2{
+    
+        padding-left: 100px;
+    }
 }
 .c2-icons img{
     width: 200px;
@@ -61,7 +81,7 @@ background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 0px !important;
+    margin-left: 20px !important;
 }
 .c2-info-h1{
     color: #fd9700;
@@ -201,13 +221,13 @@ background-color: white;
         font-size: 14px;
     }
 }
-@media screen and (max-width: 4300px) {
+@media screen and (max-width: 430px) {
     .c2-info-1{
         margin-top: 20px;
         padding-bottom: 0px;
     }
     .c2-info-2{
-        margin-top: 70px;
+        margin-top: 50px;
         padding-bottom: 0px;
     }
     .c2-info-3{
@@ -215,12 +235,12 @@ background-color: white;
         padding-bottom: 0px;
     }
     .c2-info-4{
-        margin-top: 50px;
+        margin-top: 45px;
         padding-bottom: 0px;
     }
 
 }
-  @media screen and (max-width: 412px) {
+  @media screen and (max-width: 380px) {
     .s2-c1 span{
         color: #fd9700;
         font-size: 40px;
@@ -255,15 +275,15 @@ background-color: white;
         padding-bottom: 0px;
     }
     .c2-info-2{
-        margin-top: 40px;
+        margin-top: 35px;
         padding-bottom: 0px;
     }
     .c2-info-3{
-        margin-top: 55px;
+        margin-top: 35px;
         padding-bottom: 0px;
     }
     .c2-info-4{
-        margin-top: 55px;
+        margin-top: 25px;
         padding-bottom: 0px;
     }
     .c2-info-h1{
@@ -275,10 +295,65 @@ background-color: white;
         font-size: 14px;
     }
 }
+@media screen and (max-width: 330px) {
+    .s2-c1 span{
+        color: #fd9700;
+        font-size: 40px;
+        font-weight: 600;
+     }
+     .s2-c1 p:last-of-type{
+         margin-left: 40px;
+     }
+     .s2-c2{
+
+        height: auto;
+        padding-left: 0px !important;
+    
+    }
+    .c2-icons img{
+        width: 80px;
+        height: 80px;
+        margin-top: 60px;
+    }
+    .c2-icons img:first-of-type{
+        width: 80px;
+        height: 80px;
+        margin-top: 0px;
+    }
+    .c2-steps img{
+        height: 530px;
+        margin-top: 0px;
+        width: 80px;
+    }
+    .c2-info-1{
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+    .c2-info-2{
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+    .c2-info-3{
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+    .c2-info-4{
+        margin-top: 20px;
+        padding-bottom: 0px;
+    }
+    .c2-info-h1{
+       font-size: 15px;
+       font-weight: 600;
+    }
+    .c2-info-p{
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+}
 .c2-info{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 0px !important;
+    margin-left: 20px !important;
 }

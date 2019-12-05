@@ -120,7 +120,7 @@ class HomeMobile extends React.Component {
           <p>
             <img className="chat-icon" src="images/icon.png" alt="chat-icon1" />{" "}
             How long have you left{" "}
-            <img className="chat-icon" src="images/mind.png" alt="chat-icon1" />{" "}
+            {/* <img className="chat-icon" src="images/mind.png" alt="chat-icon1" />{" "} */}
             to pay it off ?{" "}
           </p>
         )
@@ -131,9 +131,9 @@ class HomeMobile extends React.Component {
           <p>
             <img className="chat-icon" src="images/icon.png" alt="chat-icon1" />{" "}
             Are you looking to borrow more money ?
-            <img className="chat-icon" src="images/car.png" alt="chat-icon1" />
+            {/* <img className="chat-icon" src="images/car.png" alt="chat-icon1" />
             <img className="chat-icon" src="images/uma.png" alt="chat-icon1" />
-            <img className="chat-icon" src="images/ring.png" alt="chat-icon1" />
+            <img className="chat-icon" src="images/ring.png" alt="chat-icon1" /> */}
           </p>
         )
       },
@@ -314,6 +314,7 @@ class HomeMobile extends React.Component {
               <div className="mobileinnerabc">
             <HomeChat />
 
+              <from>
             <div className="my-div letcheckbutton">
               {this.state.index <= 6 && question.type === "input" && (
                 <div
@@ -325,6 +326,7 @@ class HomeMobile extends React.Component {
                     justifyContent: "center"
                   }}
                 >
+
                   <input
                     type={question.type}
                     placeholder={question.placeholder}
@@ -332,7 +334,7 @@ class HomeMobile extends React.Component {
                     onChange={this.whanchange}
                     style={{ backgroundColor: "white", color: "black" }}
                     value={question.message}
-                  />
+                    />
                 </div>
               )}
               <div
@@ -340,13 +342,14 @@ class HomeMobile extends React.Component {
                 style={{ marginBottom: "20px" }}
               >
                 <input
-                  type="button"
+                  type="submit"
                   onClick={this.changeitem}
                   className="home-bottom-button text-center"
                   value={!this.state.index ? "OK let's go" : "submit"}
-                />
+                  />
                 </div>
               </div>
+                </from>
             </div>
           </div>
         </div>

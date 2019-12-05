@@ -37,9 +37,16 @@
 
 }
 .s6-c2 img{
-    width: 600px;
+    width: 800px;
     margin: -100px 0px 0px 0px;
 
+}
+@media screen and (max-width: 1404px) {
+    .s6-c2 img{
+        width: 600px;
+        margin: -100px 0px 0px 0px;
+    
+    }
 }
 @media screen and (max-width: 804px) {
     .s6-c{

@@ -9,7 +9,7 @@ export default class Section1 extends Component {
 
              
                  <div className="s3-left">
-                     <h1>Slash up to 20% off the cost of your mortage!</h1>
+                     <h1>Slash up to 20% off the cost of your mortgage!</h1>
                      <div className="left-c1">
                          <p>Why not have more money for:</p>
                          <ul>
@@ -25,7 +25,7 @@ export default class Section1 extends Component {
                          <img src={section3} alt=""/>
                          <div className="right-call">
                              <h1>Call to talk</h1>
-                             <p>with a mortage expert</p>
+                             <p>with a mortgage expert</p>
                              <span>+35312345678</span>
                          </div>
                  </div>

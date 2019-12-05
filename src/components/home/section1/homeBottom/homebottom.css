@@ -2,12 +2,11 @@
   width: 320px;
   margin-bottom: 20px;
   text-align: right;
- 
 }
 .home-bottom-p {
   font-weight: 600;
-  font-size: 16px;
-  color: black;
+  font-size: 20px;
+  color: white;
 }
 .home-bottom-button {
   background-color: #fd9700;
@@ -27,14 +26,13 @@ outline: none;
   margin-bottom: 20px;
   position: absolute;
   left:40px;
-  bottom: 50px;
-  
+  bottom: 180px;
 }
 .home-bottom-button2 {
   background-color: #1b9c01;
   color: white;
-  border-radius: 12px;
-  padding: 6px 16px;
+  border-radius: 5px;
+  padding: 10px 20px;
   border: 1px solid transparent;
   width: auto;
   text-align: center;
@@ -44,5 +42,12 @@ outline: none;
   color: #fd9700;
 transition: 0.5s;
 border-color: #fd9700;
+}
+@media screen and (max-width: 1111px) {
+  .home-bottom-p {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+  } 
 }
 

@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   overflow: hidden !important;
+
   /* background-color: rgba(192, 81, 81, 0.6); */
 }
 .section1-c2 {
@@ -18,6 +19,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin-bottom: 10px;
 }
 .right-btn {
   background-color: grey;
@@ -51,7 +53,10 @@
   padding-left: -25px !important;
   border-bottom-left-radius: 25px;
 }
-
+.s1-p-c{
+  font-size: 22px;
+  font-weight: 600;
+}
 @keyframes animationon {
   0% {
     opacity: 1;
@@ -184,7 +189,7 @@
 
 
   .textwriten{
-    width: 270px;
+    width: 300px;
     font-size: 20px;
     position: absolute;
     left :40px;

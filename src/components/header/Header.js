@@ -7,6 +7,7 @@ import {
     Nav,
     NavItem,
     NavLink,
+    Button
 } from 'reactstrap';
 import { Link } from "react-router-dom"
 import "./header.css"
@@ -40,18 +41,24 @@ class Header extends Component {
                             </div>
                         </NavbarToggler>
                         <Collapse isOpen={this.state.isOpen} navbar>
-                            <Nav className="ml-auto header-link-area" navbar>
+                            <Nav className=" ml-auto2" navbar>
+                                <div className="header-link-area">
+
                                 <NavItem>
-                                    <NavLink to="/about"><Link className="header-link" to="/aboutus">About US</Link></NavLink>
+                                    <NavLink to="/about"><Link className="header-link" to="/aboutus">About Us</Link></NavLink>
                                 </NavItem>                            
                                 <NavItem>
-                                <NavLink to="/"><Link className="header-link" to="/why-swicthes">Why Swicthes?</Link></NavLink>
+                                <NavLink to="/why-swicthes"><Link className="header-link" to="/why-swicthes">Why Switch?</Link></NavLink>
                                 </NavItem>                                 
                                 <NavItem>
-                                <NavLink to="/"><Link className="header-link" to="/contact-us">Contact Us</Link></NavLink>
+                                <NavLink to="/contact-us"><Link className="header-link" to="/contact-us">Contact Us</Link></NavLink>
                                 </NavItem>                            
                                 <NavItem>
-                                    <NavLink to="/"><Link className="header-link" to="/faqs">FAQ</Link></NavLink>
+                                    <NavLink to="/faqs"><Link className="header-link" to="/faqs">FAQ</Link></NavLink>
+                                </NavItem>
+                                </div>
+                                <NavItem className="login-btn-area">
+                                <Link  to="/"> <Button className="h-login-btn" color="success" >Log In</Button></Link>
                                 </NavItem>
 
 
