@@ -314,7 +314,7 @@ class HomeMobile extends React.Component {
               <div className="mobileinnerabc">
             <HomeChat />
 
-              <from>
+              <from onSubmit={this.changeitem}>
             <div className="my-div letcheckbutton">
               {this.state.index <= 6 && question.type === "input" && (
                 <div

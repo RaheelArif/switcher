@@ -13,11 +13,7 @@
 .slider-main-c{
     margin: 140px 200px 0px 200px;
 }
-.slider-img{
-    width: 84%;
-    height: 150px;
-    border-radius: 10px;;
-}
+
 .slider-c{
     background-color: #fd9700;
     padding: 8% 0px;
@@ -63,15 +59,19 @@ outline: none;
     color: rgb(54, 53, 53);
     z-index: 10 !important;
 }
+.slider-r{
+    position: relative;
+    z-index: 10;
+}
 .s4bg{
     color: rgb(243, 243, 243);
-    font-size: 170px !important;
+    font-size: 150px !important;
     font-weight: 700;
     width: 450px;
     line-height: 0.8em !important;
     position: absolute;
     z-index: 1;
-    padding-left: 100px !important;
+    padding-left: 50px !important;
     padding-top: 10px;
     margin: -30px 0px 0px 00px !important;
 }

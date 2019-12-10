@@ -22,8 +22,7 @@ class Footer extends React.Component {
             <div className="col-lg-3  f-col">
               <img src={Logo} className="footer-logo" />
               <p className="about-p">
-                Switcheroo.ie
-                <br />
+
                 Panda Capital Ltd. (registration code C192972) trading as
                 Switcheroo.ie is authorised by the Central Bank of Ireland as a
                 mortgage credit intermediary under European Union (Consumer
@@ -74,7 +73,7 @@ class Footer extends React.Component {
               <h6 className="f-h6">Contact Us</h6>
               <ul>
                 <li>
-                  <a href="mailto:hello@swhitcheroo.ie">hello@swhitcheroo.ie</a>
+                  <a href="mailto:hello@swhitcheroo.ie">hello@Switcheroo.ie</a>
                 </li>
                 <li>
                   <a href="tel:+92300XXXXXXX">+353 XX XXX XXX</a>
@@ -88,14 +87,15 @@ class Footer extends React.Component {
                 </span>
                 <span className="social-icon">
                   <a>
+                    {/* LN */}
                     <i class="fab fa-twitter"></i>
                   </a>
                 </span>
-                <span className="social-icon">
+                {/* <span className="social-icon">
                   <a>
                     <i class="fab fa-instagram"></i>
                   </a>
-                </span>
+                </span> */}
               </div>
             </div>
             <div

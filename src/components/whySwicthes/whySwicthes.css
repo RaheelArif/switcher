@@ -8,20 +8,20 @@ border-radius: 20px;
 }
 .why-why-r{
     color: white;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 50px;
-    font-size: 60px;
+    font-size: 90px;
 }
 .why-sw-r{
     color: white;
     margin-top: 0px;
     margin-left: 50px;
-    font-size: 60px;
+    font-size: 90px;
 }
 .why-sw-r span{
     color: black;
     margin-top: 0px;
-    font-size: 60px;
+    font-size: 90px;
 }
 
 .whysw-r{
@@ -34,10 +34,9 @@ margin:40px 0px 50px 100px;
 .why-img{
    position: absolute;
    left: 500px;
-   margin-top: 50px;
-   width: 150px;
+   margin-top: 70px;
+   width: 190px;
    border-radius: 20px;
-   box-shadow: 0px 0px 20px rgb(192, 192, 192);
 }
 .why-sw{
     /* background-image: linear-gradient( to  left ,   white, orange); */
