@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import "./home.css"
 import Header from "../header/Header"
-import Section1 from './section1/section1';
+// import Section1 from './section1/section1';
+import Section1a from './section1a/section1';
 import Section2 from './section2/section2';
 import Section3 from './section3/section3';
 import Section4 from './section4/section4';
@@ -13,7 +14,10 @@ export default class Home extends Component {
         return (
             <div className="home">
                 <Header />
+                <Section1a />
+                {/* <div className="s111">
                 <Section1 />
+                </div> */}
                 <Section2 />
                 <Section3 />
                 <Section4 />

@@ -95,7 +95,7 @@
     width: 100% !important;
     flex-wrap: wrap;
     justify-content: center;
-    height: 1133px;
+    /* height: 1133px; */
   }
   .element-animation {
     animation-name: unset;
@@ -201,4 +201,18 @@
     width: auto;
     height: auto;
   }
-  
+  @media screen and (max-width: 1111px) {
+    .textwriten{
+  display: none;
+  }
+  .hmbtm{
+    display: none !important;
+  }
+
+}
+@media screen and (min-width: 1111px) {
+.vppp{
+  display: none;
+}
+
+}

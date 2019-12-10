@@ -29,7 +29,10 @@ export default class Section1 extends Component {
                 </p>
               )}
             </div>
+            <div className="hmbtm">
+
             <HomeBottom />
+            </div>
 
             <HomeLeft show={this.state.toggle} />
 
@@ -39,7 +42,7 @@ export default class Section1 extends Component {
               }
               phone={
                 this.state.toggle &&
-                document.getElementById("root").style.width > 1100
+                document.getElementById("root").style.width > 1111
                   ? "mobilephoneoff"
                   : "mobilephoneon"
               }

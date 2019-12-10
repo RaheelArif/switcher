@@ -11,7 +11,7 @@ class HomeBottom extends React.Component{
 
     render(){
         return(
-    <div  >
+    <div className="hmbtm" >
 
                   <div className={document.getElementById("root").style.width > 1100 ?"home-bottom-content":"home-bottom-content2"}>
                 <p className="home-bottom-p">Why overpay?</p>

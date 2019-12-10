@@ -11,8 +11,8 @@ class HomeVideo extends React.Component {
     render() {
 
         return (
-            <div className={`col-lg-6  
-            ${document.getElementById("root").offsetWidth > 1100 ? "displayClass" :""}
+            <div className={`col-lg-6  vdvd 
+            ${document.getElementById("root").offsetWidth > 1111 ? "displayClass" :""}
              
               ${this.props.show?"animate-on":"animate-of"}`} >
                 <div className="home-left  ">
