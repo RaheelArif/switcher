@@ -139,9 +139,10 @@ margin-bottom:22px ;
     margin-top: 50px;
   }
   .text-res{
-    widows: 200px !important;
-    background-color: #fd9700 !important;
-  }
+    padding: 6px 0px !important;
+    width: 150px !important;
+    background-color:white;
+}
 }
 @media screen and (max-width: 530px) {
   .hr-p{
@@ -149,7 +150,7 @@ margin-bottom:22px ;
   }
   .vppp{
     width:320px;
-
+padding-top: 150px;
   }
   .home-right {
     width: 320px !important;

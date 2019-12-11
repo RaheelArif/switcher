@@ -1,6 +1,7 @@
 .home-bottom-content1 {
   width: 320px;
   margin-bottom: 20px;
+  
   text-align: right;
 }
 .home-bottom-p1 {
@@ -31,4 +32,12 @@
   box-shadow: 0px 0px 3px  rgb(235, 234, 234);
   width: auto;
   text-align: center;
+}
+@media screen and (max-width: 770px) {
+
+  .home-bottom-p1 {
+padding-top: 140px;
+font-size: 20px;
+padding-bottom: 20px;
+  }
 }
