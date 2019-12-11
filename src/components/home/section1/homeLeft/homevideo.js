@@ -11,7 +11,7 @@ class HomeVideo extends React.Component {
     render() {
 
         return (
-            <div className="col-lg-6 ">
+            <div className="col-lg-12">
                 <div className="home-left1 ">
                     <p>Watch our video to see easy it is to switch and save on your mortgage</p>
                     <div className="video-div1">

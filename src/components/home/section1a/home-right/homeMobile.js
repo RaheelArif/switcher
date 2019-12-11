@@ -161,47 +161,7 @@ class HomeMobile extends React.Component {
           </p>
         )
       },
-      {
-        index: 0,
-        message: (
-          <p>
-            <img className="chat-icon" src="images/icon.png" alt="chat-icon1" />{" "}
-            Oh Yeah!!!{" "}
-          </p>
-        )
-      },
-      {
-        index: 0,
-        message: (
-          <p>
-            <img className="chat-icon" src="images/cap.png" alt="chat-icon1" />{" "}
-          </p>
-        )
-      },
-      {
-        index: 0,
-        message: (
-          <p>
-            <img
-              className="chat-icon"
-              src="images/bottle.png"
-              alt="chat-icon1"
-            />{" "}
-          </p>
-        )
-      },
-      {
-        index: 0,
-        message: (
-          <p>
-            <img
-              className="chat-icon"
-              src="images/water.png"
-              alt="chat-icon1"
-            />{" "}
-          </p>
-        )
-      }
+
     ]
   };
   PMT = (ir, np, pv, fv, type) => {
@@ -241,10 +201,10 @@ class HomeMobile extends React.Component {
             this.state.askquestions[index]
           ];
           this.props.dispatch(chatPush(array));
-          for (var i = 1; i <= 5; ++i) {
+          for (var i = 1; i <= 1; ++i) {
             setTimeout(
-              function() {
-                if (this.state.index <= 9) {
+              function () {
+                if (this.state.index <= 5) {
                   const array = [this.state.askquestions[index]];
                   this.props.dispatch(chatPush(array));
                   this.setState({ index: ++index });
@@ -308,52 +268,52 @@ class HomeMobile extends React.Component {
     return (
       <div className={`col-lg-6 col-md-12 res-mbmb home-mbl ${this.props.class}`}>
         <div className="home-right  ">
-        <p className="vppp">
-        Watch our video to see easy it is to switch and save on your
-                  mortgage
+          <p className="vppp">
+            Watch our video to see easy it is to switch and save on your
+                      mortgage
          </p>
           <p className="hr-p">
           </p>
           <div className={`mobile-div mx-auto ${this.props.phone}`}>
-              <div className="mobileinnerabc">
-            <HomeChat />
+            <div className="mobileinnerabc">
+              <HomeChat />
 
               <from onSubmit={this.changeitem}>
-            <div className="my-div letcheckbutton">
-              {this.state.index <= 6 && question.type === "input" && (
-                <div
-                  className="home-bottom-content mbl-input mx-auto"
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "baseline",
-                    justifyContent: "center"
-                  }}
-                >
+                <div className="my-div letcheckbutton">
+                  {this.state.index <= 6 && question.type === "input" && (
+                    <div
+                      className="home-bottom-content mbl-input mx-auto"
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "baseline",
+                        justifyContent: "center"
+                      }}
+                    >
 
-                  <input
-                    type={question.type}
-                    placeholder={question.placeholder}
-                    className="home-bottom-button  text-center"
-                    onChange={this.whanchange}
-                    style={{ backgroundColor: "white", color: "black" }}
-                    value={question.message}
+                      <input
+                        type={question.type}
+                        placeholder={question.placeholder}
+                        className="home-bottom-button  text-center"
+                        onChange={this.whanchange}
+                        style={{ backgroundColor: "white", color: "black" }}
+                        value={question.message}
+                      />
+                    </div>
+                  )}
+                  <div
+                    className="home-bottom-content my-div2   "
+                    style={{ marginBottom: "20px" }}
+                  >
+                    <input
+                      type="submit"
+                      onClick={this.changeitem}
+                      className="home-bottom-button text-center"
+                      value={!this.state.index ? "OK let's go" : "submit"}
                     />
+                  </div>
                 </div>
-              )}
-              <div
-                className="home-bottom-content my-div2   "
-                style={{ marginBottom: "20px" }}
-              >
-                <input
-                  type="submit"
-                  onClick={this.changeitem}
-                  className="home-bottom-button text-center"
-                  value={!this.state.index ? "OK let's go" : "submit"}
-                  />
-                </div>
-              </div>
-                </from>
+              </from>
             </div>
           </div>
         </div>

@@ -161,47 +161,7 @@ class HomeMobile extends React.Component {
           </p>
         )
       },
-      {
-        index: 0,
-        message: (
-          <p>
-            <img className="chat-icon" src="images/icon.png" alt="chat-icon1" />{" "}
-            Oh Yeah!!!{" "}
-          </p>
-        )
-      },
-      {
-        index: 0,
-        message: (
-          <p>
-            <img className="chat-icon" src="images/cap.png" alt="chat-icon1" />{" "}
-          </p>
-        )
-      },
-      {
-        index: 0,
-        message: (
-          <p>
-            <img
-              className="chat-icon"
-              src="images/bottle.png"
-              alt="chat-icon1"
-            />{" "}
-          </p>
-        )
-      },
-      {
-        index: 0,
-        message: (
-          <p>
-            <img
-              className="chat-icon"
-              src="images/water.png"
-              alt="chat-icon1"
-            />{" "}
-          </p>
-        )
-      }
+     
     ]
   };
   PMT = (ir, np, pv, fv, type) => {
@@ -241,10 +201,10 @@ class HomeMobile extends React.Component {
             this.state.askquestions[index]
           ];
           this.props.dispatch(chatPush(array));
-          for (var i = 1; i <= 5; ++i) {
+          for (var i = 1; i <= 1; ++i) {
             setTimeout(
               function() {
-                if (this.state.index <= 9) {
+                if (this.state.index <= 5) {
                   const array = [this.state.askquestions[index]];
                   this.props.dispatch(chatPush(array));
                   this.setState({ index: ++index });
@@ -306,12 +266,13 @@ class HomeMobile extends React.Component {
   render() {
     const question = this.state.questions[this.state.index];
     return (
-      <div className={`col-lg-6 col-md-12 res-mbmb home-mbl ${this.props.class}`}>
-        <div className="home-right  ">
+      <div className={`col-lg-12 col-md-12 res-mbmb home-mbl ${this.props.class}`}>
         <p className="vppp">
         Watch our video to see easy it is to switch and save on your
                   mortgage
          </p>
+        <div className="home-right  ">
+         <div className="clear"></div>
           <p className="hr-p">
           </p>
           <div className={`mobile-div mx-auto ${this.props.phone}`}>
