@@ -70,26 +70,14 @@ margin-bottom:22px ;
     flex-direction: column;
   }
   .mobile-div {
-    width: 500px !important;
-    height: 550px !important;
+    width: 330px;
+    height: 370px;
     margin-left: 100px;
-    background: url("./images/mobile.png") !important;
-    background-size: 100% 100% !important;
-    background-color: white !important;
+    background: url("");
+    background-color: white;
   }
   .home-right {
     margin-left: 0px;
-  }
-  .res-mbmb{
-    margin-left: 23% !important;
-    margin-top: 20px;
-    
-  }
-  .vppp{
-    text-align: center;
-    font-weight: bold;
-    width: 500px !important;
-
   }
 }
 @media screen and (max-width: 800px) {
@@ -110,12 +98,10 @@ margin-bottom:22px ;
   }
   .mobile-div {
     margin-bottom: 20px;
-    width: 330px !important;
-  height: 500px !important;
-    background: url("./images/mobile.png") !important;
+    width: 330px;
+  height: 370px;
+    background: url("");
     background-color: white;
-    background-size: 100% 100% !important;
-
   }
 }
 @media screen and (max-width: 530px) {
@@ -314,16 +300,5 @@ margin-bottom:22px ;
 .home-mbl.element-animation1{
   padding-left: 0px;
   width: 620px !important;
-  
-}
-    @media screen and (min-width: 1111px) {
-    .vppp{
-    display: none;
-    
-    }
-    
-    
-    }
-@media screen and (max-width: 1111px) {
 
 }
