@@ -13,20 +13,20 @@ class HomeMobile extends React.Component {
         index: 1,
         type: "button",
         pre: "Aprox",
-        question: "$",
+        question: " ‎€",
         value: "OK let's go"
       },
       {
         index: 1,
-        placeholder: "Please enter in $",
+        placeholder: "Please enter in  ‎€",
         type: "input",
         pre: "Aprox",
-        question: "$",
+        question: " ‎€",
         message: ""
       },
       {
         index: 1,
-        placeholder: "Please inter in $",
+        placeholder: "Please inter in  ‎€",
         type: "input",
         pre: "Aprox",
         question: "",
@@ -50,7 +50,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Please inter in $",
+        placeholder: "Please inter in  ‎€",
         type: "input",
         pre: "Aprox",
         question: "",
@@ -58,7 +58,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in  ‎€",
         type: "button",
         pre: "Aprox",
         question: "",
@@ -66,7 +66,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in  ‎€",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -74,7 +74,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in  ‎€",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -82,7 +82,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in  ‎€",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -228,8 +228,8 @@ class HomeMobile extends React.Component {
                             alt="chat-icon1"
                           />
                           ok, so based on the info provided, if you switcheroo
-                          you could save {perMonth.toFixed(2)}$ per month, which
-                          is {(perMonth * 12).toFixed(2)}$ per year!*{" "}
+                          you could save {perMonth.toFixed(2)} ‎€ per month, which
+                          is {(perMonth * 12).toFixed(2)} ‎€ per year!*{" "}
                         </p>
                       )
                     }
@@ -266,7 +266,7 @@ class HomeMobile extends React.Component {
   render() {
     const question = this.state.questions[this.state.index];
     return (
-      <div className={`col-lg-12 col-md-12 res-mbmb home-mbl ${this.props.class}`}>
+      <div className={`col-lg-12 col-md-12 res-mbmb home-mbl  ‎${this.props.class}`}>
         <p className="vppp">
         Watch our video to see easy it is to switch and save on your
                   mortgage
@@ -275,7 +275,7 @@ class HomeMobile extends React.Component {
          <div className="clear"></div>
           <p className="hr-p">
           </p>
-          <div className={`mobile-div mx-auto ${this.props.phone}`}>
+          <div className={`mobile-div mx-auto  ‎${this.props.phone}`}>
               <div className="mobileinnerabc">
             <HomeChat />
 
@@ -295,7 +295,7 @@ class HomeMobile extends React.Component {
                   <input
                     type={question.type}
                     placeholder={question.placeholder}
-                    className="home-bottom-button  text-center"
+                    className="home-bottom-button text-res text-center"
                     onChange={this.whanchange}
                     style={{ backgroundColor: "white", color: "black" }}
                     value={question.message}
