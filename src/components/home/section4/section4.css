@@ -117,6 +117,24 @@ outline: none;
 .section4-c h1{
     font-size: 50px;
 }
+
+}
+@media screen and (max-width: 840px) {
+
+
+.s4bg{
+    color: rgb(243, 243, 243);
+    font-size: 90px !important;
+    font-weight: 700;
+    padding-left: 50px !important;
+    width: 320px !important;
+}
+.s4bg span{
+    margin-left: 50px;
+}
+.section4-c h1{
+    font-size: 50px;
+}
 }
 @media screen and (max-width: 600px) {
     .section4-c{
@@ -128,7 +146,7 @@ outline: none;
     }
     .s4bg{
         color: rgb(243, 243, 243);
-        font-size: 60px !important;
+        font-size: 50px !important;
         font-weight: 700;
         padding-top: 40px;
         padding-left: 20px !important;

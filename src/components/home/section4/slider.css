@@ -69,3 +69,22 @@
   background-color: #fd9700;
   border-radius: 50%;
 }
+@media screen and (max-width: 840px) {
+
+  .slider-img{
+      width: 84%;
+      height: 50px;
+      border-radius: 10px;;
+  }
+  .h-s1-slider-c{
+    position: relative;
+    z-index: 10;
+    margin-top: 150px;
+    margin-left: 7%;
+    width: 86%;
+    display: flex;
+    justify-content: center !important;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(226, 226, 226)); 
+     /* box-shadow: 0px 0px 10px rgb(233, 233, 233); */
+}
+}
