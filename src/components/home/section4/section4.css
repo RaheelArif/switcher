@@ -128,12 +128,13 @@ outline: none;
     }
     .s4bg{
         color: rgb(243, 243, 243);
-        font-size: 90px !important;
+        font-size: 60px !important;
         font-weight: 700;
+        padding-top: 40px;
         padding-left: 20px !important;
     }
     .s4bg span{
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     

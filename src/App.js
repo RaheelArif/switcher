@@ -8,6 +8,7 @@ import whySwicthes from './components/whySwicthes/whySwicthes';
 import Contact from "./components/ContactUs/contactus"
 import TOBIndex from './components/TOB/tobindex';
 // import 'react-virtualized/styles.css'
+import "./App.css"
 
 // import Header from './components/home/header/Header';
 import { BrowserRouter, Switch, Route, } from "react-router-dom"

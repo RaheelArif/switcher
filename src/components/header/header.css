@@ -150,6 +150,9 @@ background-color: #fd9700 !important;
 width: 100% !important;
 }
 .logo {
+  width: 280px;
+  height: 60px;
+  opacity: 1;
 border-radius: 10px;
 }
 }

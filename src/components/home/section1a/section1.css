@@ -141,7 +141,7 @@
     animation: mobilephoneon ease-in-out 1s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
-    animation-fill-mode: forwards; /*when the spec is finished*/
+    animation-fill-mode: forwards; 
     opacity: 1;
     height: 470px;
     box-sizing: border-box;
@@ -208,11 +208,22 @@
   .hmbtm{
     display: none !important;
   }
-
+  .vdvd {
+    display: none;
+  }
+.res-mbmb{
+  background-color: blueviolet;
+  height: 1100px !important;
+}
+.s22{
+  display: none;
+}
 }
 @media screen and (min-width: 1111px) {
 .vppp{
   display: none;
+
 }
+
 
 }
