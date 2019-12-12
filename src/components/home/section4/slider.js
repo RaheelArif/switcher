@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "./slider.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import One from "./images/1.png"
+import One from "./images/1c.png"
 import two from "./images/2.jpg"
-import three from "./images/3.jpg"
+import three from "./images/3c.jpg"
 import four from "./images/4.jpg"
 import five from "./images/5.png"
 export default class SimpleSlider extends Component {

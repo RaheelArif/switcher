@@ -69,13 +69,24 @@
   background-color: #fd9700;
   border-radius: 50%;
 }
+@media screen and (max-width: 1000px) {
+
+  .slider-img{
+      width: 84%;
+      height: 120px;
+      border-radius: 10px;;
+  }
+
+}
 @media screen and (max-width: 840px) {
 
   .slider-img{
       width: 84%;
-      height: 50px;
+      height: 100px;
       border-radius: 10px;;
+      border: 10px solid #fd9700;
   }
+
   .h-s1-slider-c{
     position: relative;
     z-index: 10;
@@ -87,4 +98,15 @@
     background-image: linear-gradient(rgb(255, 255, 255), rgb(226, 226, 226)); 
      /* box-shadow: 0px 0px 10px rgb(233, 233, 233); */
 }
+}
+@media screen and (max-width: 500px) {
+
+  .slider-img{
+      width: 84%;
+      height: 80px;
+      border-radius: 10px;;
+      border: 10px solid #fd9700;
+  }
+
+
 }
