@@ -43,7 +43,7 @@ class HomeMobile extends React.Component {
       {
         index: 1,
         placeholder: "yes or no",
-        type: "input",
+        type: "radio",
         pre: "Aprox",
         question: "",
         message: ""
@@ -256,6 +256,7 @@ class HomeMobile extends React.Component {
   };
   whanchange = e => {
     const { index } = this.state;
+    console.log(e.target.value)
     const value = e.target.value;
     let questions = [...this.state.questions];
     questions[index].message = value;
@@ -299,6 +300,37 @@ class HomeMobile extends React.Component {
                         style={{ backgroundColor: "white", color: "black" }}
                         value={question.message}
                       />
+                    </div>
+                  )}
+                  {this.state.index <= 6 && question.type === "radio" && (
+                    <div
+                      className="home-bottom-content chat-rb-div mbl-input mx-auto"
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "baseline",
+                        justifyContent: "center"
+                      }}
+                    >
+
+                      <input
+                        type={question.type}
+                        name="yesno"
+                        id="yes"
+                        className="home-bottom-button  text-center"
+                        onChange={this.whanchange}
+                        style={{ backgroundColor: "white", color: "black" }}
+                        value="Yes"
+                      /><label for="yes">Yes</label>
+                      <input
+                        type={question.type}
+                        name="yesno"
+                        id="no"
+                        className="home-bottom-button  text-center"
+                        onChange={this.whanchange}
+                        style={{ backgroundColor: "white", color: "black" }}
+                        value="No"
+                      /><label for="no">No</label>
                     </div>
                   )}
                   <div

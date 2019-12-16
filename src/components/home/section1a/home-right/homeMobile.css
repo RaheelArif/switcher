@@ -2,7 +2,7 @@
   width: 300px;
   margin-left: 50px;
 }
-.hr-p{
+.hr-p {
   font-size: 20px;
   width: 360px;
 }
@@ -10,7 +10,7 @@
   width: 620px;
   height: 470px;
 
-  padding:0px 45px ;
+  padding: 0px 45px;
   padding-top: 28px;
   background: url("./images/mobile.jpg");
   background-size: 100% 100%;
@@ -18,53 +18,108 @@
   border-radius: 35px;
   margin-bottom: 20px;
 }
-.mobileinnerabc{
+.mobileinnerabc {
   background-color: white;
   height: 413px;
 }
 
-.tab-icon{
-width: 80px;
-height: 37px;
-z-index: 200;
-margin-bottom:22px ;
-
+.tab-icon {
+  width: 80px;
+  height: 37px;
+  z-index: 200;
+  margin-bottom: 22px;
 }
-.my-div{
+.my-div {
   margin-left: 40%;
- padding-top: 3px !important;
- display: flex;
- flex-direction: row;
+  padding-top: 3px !important;
+  display: flex;
+  flex-direction: row;
 }
-.my-div2{
+.my-div2 {
   display: flex;
   justify-content: center !important;
 }
-.mbl-input input{
+.mbl-input input {
   border: 1px solid black;
-  outline: none;;
+  outline: none;
 }
-.mbl-input input:focus{
+.mbl-input input:focus {
   border: 1px solid rgb(255, 175, 3);
-  outline: none;;
+  outline: none;
 }
-.chat-icon{
+.chat-icon {
   width: 20px;
 }
-@media screen and (max-width: 1411px) {
+.chat-rb-div{
+  padding: 10px 0 0 0 !important;
+}
+.chat-rb-div input[type="radio"]:checked,
+.chat-rb-div input[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.chat-rb-div input[type="radio"]:checked + label,
+.chat-rb-div input[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 26px;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+  line-height: 18px;
+  display: inline-block;
+  color: #666;
+}
 
+.chat-rb-div input[type="radio"]:checked + label:before,
+.chat-rb-div input[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #808080;
+  border-radius: 100%;
+  background: #FFF;
+}
+
+.chat-rb-div input[type="radio"]:checked + label:after,
+.chat-rb-div input[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #fd9700;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.chat-rb-div input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.chat-rb-div input[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+@media screen and (max-width: 1411px) {
   .home-right {
     margin-left: 30px;
   }
 }
 @media screen and (max-width: 1311px) {
-
   .home-right {
     margin-left: 20px;
   }
 }
 @media screen and (max-width: 1111px) {
-  .section1-c{
+  .section1-c {
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -81,17 +136,17 @@ margin-bottom:22px ;
   }
 }
 @media screen and (max-width: 800px) {
-  .home-right{
+  .home-right {
     display: flex;
     align-content: center;
     flex-direction: column;
   }
-  .letcheckbutton{
+  .letcheckbutton {
     margin: 10px;
     display: flex;
     flex-direction: row;
   }
-  .section1-c{
+  .section1-c {
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -99,13 +154,13 @@ margin-bottom:22px ;
   .mobile-div {
     margin-bottom: 20px;
     width: 330px;
-  height: 370px;
+    height: 370px;
     background: url("");
     background-color: white;
   }
 }
 @media screen and (max-width: 530px) {
-  .hr-p{
+  .hr-p {
     width: auto;
   }
 }
@@ -191,9 +246,8 @@ margin-bottom:22px ;
   width: 80%;
   /* color: black; */
   flex-wrap: wrap;
-
 }
-.mesg-area-r{
+.mesg-area-r {
   padding-top: 30px;
   height: 320px;
   background-color: rgb(255, 255, 255);
@@ -234,7 +288,6 @@ margin-bottom:22px ;
   align-items: center;
   background-color: grey;
 }
-
 
 .newMessageForm .input {
   height: 10px;
@@ -297,8 +350,7 @@ margin-bottom:22px ;
   justify-content: space-around;
 }
 
-.home-mbl.element-animation1{
+.home-mbl.element-animation1 {
   padding-left: 0px;
   width: 620px !important;
-
 }

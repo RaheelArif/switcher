@@ -43,7 +43,7 @@ class HomeMobile extends React.Component {
       {
         index: 1,
         placeholder: "yes or no",
-        type: "input",
+        type: "radio",
         pre: "Aprox",
         question: "",
         message: ""
@@ -302,6 +302,37 @@ class HomeMobile extends React.Component {
                     />
                 </div>
               )}
+              {this.state.index <= 6 && question.type === "radio" && (
+                    <div
+                      className="home-bottom-content chat-rb-div mbl-input mx-auto"
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "baseline",
+                        justifyContent: "center"
+                      }}
+                    >
+
+                      <input
+                        type={question.type}
+                        name="yesno"
+                        id="yes"
+                        className="home-bottom-button  text-center"
+                        onChange={this.whanchange}
+                        style={{ backgroundColor: "white", color: "black" }}
+                        value="Yes"
+                      /><label for="yes">Yes</label>
+                      <input
+                        type={question.type}
+                        name="yesno"
+                        id="no"
+                        className="home-bottom-button  text-center"
+                        onChange={this.whanchange}
+                        style={{ backgroundColor: "white", color: "black" }}
+                        value="No"
+                      /><label for="no">No</label>
+                    </div>
+                  )}
               <div
                 className="home-bottom-content my-div2   "
                 style={{ marginBottom: "20px" }}
