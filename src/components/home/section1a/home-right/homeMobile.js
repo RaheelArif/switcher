@@ -18,7 +18,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Please enter in $",
+        placeholder: "Please enter in ‎€",
         type: "input",
         pre: "Aprox",
         question: "$",
@@ -26,7 +26,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Please inter in $",
+        placeholder: "Please inter in ‎€",
         type: "input",
         pre: "Aprox",
         question: "",
@@ -50,7 +50,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Please inter in $",
+        placeholder: "Please inter in ‎€",
         type: "input",
         pre: "Aprox",
         question: "",
@@ -58,7 +58,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in ‎€",
         type: "button",
         pre: "Aprox",
         question: "",
@@ -66,7 +66,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in ‎€",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -74,7 +74,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in ‎€",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -82,7 +82,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in ‎€",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -228,8 +228,8 @@ class HomeMobile extends React.Component {
                             alt="chat-icon1"
                           />
                           ok, so based on the info provided, if you switcheroo
-                          you could save {perMonth.toFixed(2)}$ per month, which
-                          is {(perMonth * 12).toFixed(2)}$ per year!*{" "}
+                          you could save {perMonth.toFixed(2)}‎€ per month, which
+                          is {(perMonth * 12).toFixed(2)}‎€ per year!*{" "}
                         </p>
                       )
                     }
