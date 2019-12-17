@@ -1,6 +1,4 @@
-
-
-.section4-c{
+.section4-ca{
     width: 100%;
     margin-top: 100px;
     padding-top: 130px;
@@ -172,22 +170,27 @@ outline: none;
     margin: 60px 10px 0px 10px;
 }
 }
+@media screen and (max-width: 500px) {
+
+
+
+}
 @media screen and (max-width: 450px) {
 
-    .slider-img{
-        width: 84%;
-        height: 60px;
-        border-radius: 10px;;
-    }
+
+    .section4-ca{
+        display: none !important;
+        background-color: #fd9700;
+            }
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
 
     .slider-img{
         width: 84%;
         height: 50px;
         border-radius: 10px;;
     }
-}
+} */
 
 
