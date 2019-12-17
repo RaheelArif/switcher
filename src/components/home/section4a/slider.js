@@ -9,12 +9,14 @@ import five from "./images/2.jpg"
 import three from "./images/3.png"
 import four from "./images/4.jpg"
 export default class SimpleSlider extends Component {
+
   render() {
+    
     const settings = {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 3,
+      slidesToShow: window.screen.width>450?3:1,
       slidesToScroll: 1
     };
     return (

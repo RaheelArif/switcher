@@ -14,7 +14,7 @@ export default class Home extends Component {
         return (
             <div className="home">
                 <Header />
-                {/* <div className="s22">
+                <div className="s22">
 
                 <Section1a />
                 </div>
@@ -22,12 +22,12 @@ export default class Home extends Component {
                 <Section1 />
                 </div>
                 <Section2 />
-                <Section3 /> */}
+                <Section3 />
             
                 
                 <Section4 />
-                {/* <Section5 />
-                <Section6 /> */}
+                <Section5 />
+                <Section6 />
                 <Footer />
             </div>
         )
