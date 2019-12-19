@@ -18,7 +18,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Please enter in $",
+        placeholder: "Please enter in €",
         type: "input",
         pre: "Aprox",
         question: "$",
@@ -26,7 +26,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Please inter in $",
+        placeholder: "Please inter in €",
         type: "input",
         pre: "Aprox",
         question: "",
@@ -43,6 +43,14 @@ class HomeMobile extends React.Component {
       {
         index: 1,
         placeholder: "yes or no",
+        type: "radio",
+        pre: "Aprox",
+        question: "",
+        message: ""
+      },
+      {
+        index: 1,
+        placeholder: "Please inter in €",
         type: "input",
         pre: "Aprox",
         question: "",
@@ -50,15 +58,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Please inter in $",
-        type: "input",
-        pre: "Aprox",
-        question: "",
-        message: ""
-      },
-      {
-        index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in €",
         type: "button",
         pre: "Aprox",
         question: "",
@@ -66,7 +66,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in €",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -74,7 +74,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in €",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -82,7 +82,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in $",
+        placeholder: "Enter in €",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -160,7 +160,7 @@ class HomeMobile extends React.Component {
             />{" "}
           </p>
         )
-      },
+      }
     ]
   };
   PMT = (ir, np, pv, fv, type) => {
@@ -198,7 +198,7 @@ class HomeMobile extends React.Component {
           this.props.dispatch(chatPush(array));
           for (var i = 1; i <= 1; ++i) {
             setTimeout(
-              function () {
+              function() {
                 if (this.state.index <= 5) {
                   const array = [this.state.askquestions[index]];
                   this.props.dispatch(chatPush(array));
@@ -222,8 +222,8 @@ class HomeMobile extends React.Component {
                             alt="chat-icon1"
                           />
                           ok, so based on the info provided, if you switcheroo
-                          you could save {perMonth.toFixed(2)}$ per month, which
-                          is {(perMonth * 12).toFixed(2)}$ per year!*{" "}
+                          you could save {perMonth.toFixed(2)}€ per month, which
+                          is {(perMonth * 12).toFixed(2)}€ per year!*{" "}
                         </p>
                       )
                     }
@@ -260,14 +260,15 @@ class HomeMobile extends React.Component {
   render() {
     const question = this.state.questions[this.state.index];
     return (
-      <div className={`col-lg-6 col-md-12 res-mbmb home-mbl ${this.props.class}`}>
+      <div
+        className={`col-lg-6 col-md-12 res-mbmb home-mbl ${this.props.class}`}
+      >
         <div className="home-right  ">
           <p className="vppp">
             Watch our video to see easy it is to switch and save on your
-                      mortgage
-         </p>
-          <p className="hr-p">
+            mortgage
           </p>
+          <p className="hr-p"></p>
           <div className={`mobile-div mx-auto ${this.props.phone}`}>
             <div className="mobileinnerabc">
               <HomeChat />
@@ -293,14 +294,51 @@ class HomeMobile extends React.Component {
                       />
                     </div>
                   )}
+                  {this.state.index <= 6 && question.type === "radio" && (
+                    <div
+                      className="home-bottom-content chat-rb-div mbl-input mx-auto"
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "baseline",
+                        justifyContent: "center"
+                      }}
+                    >
+                      <input
+                        type={question.type}
+                        name="yesno"
+                        id="yes"
+                        className="home-bottom-button  text-center"
+                        onChange={this.whanchange}
+                        style={{ backgroundColor: "white", color: "black" }}
+                        value="Yes"
+                      />
+                      <label for="yes">Yes</label>
+                      <input
+                        type={question.type}
+                        name="yesno"
+                        id="no"
+                        className="home-bottom-button  text-center"
+                        onChange={this.whanchange}
+                        style={{ backgroundColor: "white", color: "black" }}
+                        value="No"
+                      />
+                      <label for="no">No</label>
+                    </div>
+                  )}
+
                   <div
                     className="home-bottom-content my-div2   "
                     style={{ marginBottom: "20px" }}
                   >
+                    {console.log(this.state.index)}
                     <input
                       type="submit"
                       onClick={this.changeitem}
-                      className="home-bottom-button text-center"
+                      className={
+                        "home-bottom-button text-center " +
+                        (this.state.index === 6 ? "clr-green" : "")
+                      }
                       value={!this.state.index ? "OK let's go" : "submit"}
                     />
                   </div>

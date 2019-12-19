@@ -160,8 +160,7 @@ class HomeMobile extends React.Component {
             />{" "}
           </p>
         )
-      },
-     
+      }
     ]
   };
   PMT = (ir, np, pv, fv, type) => {
@@ -228,8 +227,8 @@ class HomeMobile extends React.Component {
                             alt="chat-icon1"
                           />
                           ok, so based on the info provided, if you switcheroo
-                          you could save {perMonth.toFixed(2)} ‎€ per month, which
-                          is {(perMonth * 12).toFixed(2)} ‎€ per year!*{" "}
+                          you could save {perMonth.toFixed(2)} ‎€ per month,
+                          which is {(perMonth * 12).toFixed(2)} ‎€ per year!*{" "}
                         </p>
                       )
                     }
@@ -266,43 +265,42 @@ class HomeMobile extends React.Component {
   render() {
     const question = this.state.questions[this.state.index];
     return (
-      <div className={`col-lg-12 col-md-12 res-mbmb home-mbl  ‎${this.props.class}`}>
+      <div
+        className={`col-lg-12 col-md-12 res-mbmb home-mbl  ‎${this.props.class}`}
+      >
         <p className="vppp">
-        Watch our video to see easy it is to switch and save on your
-                  mortgage
-         </p>
+          Watch our video to see easy it is to switch and save on your mortgage
+        </p>
         <div className="home-right  ">
-         <div className="clear"></div>
-          <p className="hr-p">
-          </p>
+          <div className="clear"></div>
+          <p className="hr-p"></p>
           <div className={`mobile-div mx-auto  ‎${this.props.phone}`}>
-              <div className="mobileinnerabc">
-            <HomeChat />
+            <div className="mobileinnerabc">
+              <HomeChat />
 
               <from onSubmit={this.changeitem}>
-            <div className="my-div letcheckbutton">
-              {this.state.index <= 6 && question.type === "input" && (
-                <div
-                  className="home-bottom-content mbl-input mx-auto"
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "baseline",
-                    justifyContent: "center"
-                  }}
-                >
-
-                  <input
-                    type={question.type}
-                    placeholder={question.placeholder}
-                    className="home-bottom-button text-res text-center"
-                    onChange={this.whanchange}
-                    style={{ backgroundColor: "white", color: "black" }}
-                    value={question.message}
-                    />
-                </div>
-              )}
-              {this.state.index <= 6 && question.type === "radio" && (
+                <div className="my-div letcheckbutton">
+                  {this.state.index <= 6 && question.type === "input" && (
+                    <div
+                      className="home-bottom-content mbl-input mx-auto"
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "baseline",
+                        justifyContent: "center"
+                      }}
+                    >
+                      <input
+                        type={question.type}
+                        placeholder={question.placeholder}
+                        className="home-bottom-button text-res text-center"
+                        onChange={this.whanchange}
+                        style={{ backgroundColor: "white", color: "black" }}
+                        value={question.message}
+                      />
+                    </div>
+                  )}
+                  {this.state.index <= 6 && question.type === "radio" && (
                     <div
                       className="home-bottom-content chat-rb-div mbl-input mx-auto"
                       style={{
@@ -312,7 +310,6 @@ class HomeMobile extends React.Component {
                         justifyContent: "center"
                       }}
                     >
-
                       <input
                         type={question.type}
                         name="yesno"
@@ -321,7 +318,8 @@ class HomeMobile extends React.Component {
                         onChange={this.whanchange}
                         style={{ backgroundColor: "white", color: "black" }}
                         value="Yes"
-                      /><label for="yes">Yes</label>
+                      />
+                      <label for="yes">Yes</label>
                       <input
                         type={question.type}
                         name="yesno"
@@ -330,22 +328,26 @@ class HomeMobile extends React.Component {
                         onChange={this.whanchange}
                         style={{ backgroundColor: "white", color: "black" }}
                         value="No"
-                      /><label for="no">No</label>
+                      />
+                      <label for="no">No</label>
                     </div>
                   )}
-              <div
-                className="home-bottom-content my-div2   "
-                style={{ marginBottom: "20px" }}
-              >
-                <input
-                  type="submit"
-                  onClick={this.changeitem}
-                  className="home-bottom-button text-center"
-                  value={!this.state.index ? "OK let's go" : "submit"}
-                  />
+                  <div
+                    className="home-bottom-content my-div2   "
+                    style={{ marginBottom: "20px" }}
+                  >
+                    <input
+                      type="submit"
+                      onClick={this.changeitem}
+                      className={
+                        "home-bottom-button text-center " +
+                        (this.state.index === 6 ? "clr-green" : "")
+                      }
+                      value={!this.state.index ? "OK let's go" : "submit"}
+                    />
+                  </div>
                 </div>
-              </div>
-                </from>
+              </from>
             </div>
           </div>
         </div>
@@ -354,5 +356,3 @@ class HomeMobile extends React.Component {
   }
 }
 export default connect()(HomeMobile);
-
-

@@ -50,7 +50,7 @@
 .chat-icon {
   width: 20px;
 }
-.chat-rb-div{
+.chat-rb-div {
   padding: 10px 0 0 0 !important;
 }
 .chat-rb-div input[type="radio"]:checked,
@@ -79,7 +79,7 @@
   height: 18px;
   border: 1px solid #808080;
   border-radius: 100%;
-  background: #FFF;
+  background: #fff;
 }
 
 .chat-rb-div input[type="radio"]:checked + label:after,
@@ -107,7 +107,9 @@
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-
+.clr-green {
+  background: green !important;
+}
 @media screen and (max-width: 1411px) {
   .home-right {
     margin-left: 30px;
