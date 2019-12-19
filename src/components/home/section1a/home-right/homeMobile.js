@@ -18,7 +18,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Please enter in ‎€",
+        placeholder: "Please enter in $",
         type: "input",
         pre: "Aprox",
         question: "$",
@@ -26,7 +26,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Please inter in ‎€",
+        placeholder: "Please inter in $",
         type: "input",
         pre: "Aprox",
         question: "",
@@ -43,14 +43,6 @@ class HomeMobile extends React.Component {
       {
         index: 1,
         placeholder: "yes or no",
-        type: "radio",
-        pre: "Aprox",
-        question: "",
-        message: ""
-      },
-      {
-        index: 1,
-        placeholder: "Please inter in ‎€",
         type: "input",
         pre: "Aprox",
         question: "",
@@ -58,7 +50,15 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in ‎€",
+        placeholder: "Please inter in $",
+        type: "input",
+        pre: "Aprox",
+        question: "",
+        message: ""
+      },
+      {
+        index: 1,
+        placeholder: "Enter in $",
         type: "button",
         pre: "Aprox",
         question: "",
@@ -66,7 +66,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in ‎€",
+        placeholder: "Enter in $",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -74,7 +74,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in ‎€",
+        placeholder: "Enter in $",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -82,7 +82,7 @@ class HomeMobile extends React.Component {
       },
       {
         index: 1,
-        placeholder: "Enter in ‎€",
+        placeholder: "Enter in $",
         type: "button",
         pre: "Aprox  ",
         question: "",
@@ -161,7 +161,6 @@ class HomeMobile extends React.Component {
           </p>
         )
       },
-
     ]
   };
   PMT = (ir, np, pv, fv, type) => {
@@ -175,15 +174,11 @@ class HomeMobile extends React.Component {
      *        1: beginning of period
      */
     var pmt, pvif;
-
     fv || (fv = 0);
     type || (type = 0);
-
     if (ir === 0) return -(pv + fv) / np;
-
     pvif = Math.pow(1 + ir, np);
     pmt = (-ir * pv * (pvif + fv)) / (pvif - 1);
-
     if (type === 1) pmt /= 1 + ir;
     pmt = pmt.toFixed(2);
     return -pmt;
@@ -213,7 +208,6 @@ class HomeMobile extends React.Component {
                   const ir = 0.03 / 12;
                   const np = parseInt(this.state.questions[3].message) * 12;
                   const pv = parseInt(this.state.questions[2].message);
-
                   const perMonth =
                     parseInt(this.state.questions[5].message) -
                     this.PMT(ir, np, pv);
@@ -228,8 +222,8 @@ class HomeMobile extends React.Component {
                             alt="chat-icon1"
                           />
                           ok, so based on the info provided, if you switcheroo
-                          you could save {perMonth.toFixed(2)}‎€ per month, which
-                          is {(perMonth * 12).toFixed(2)}‎€ per year!*{" "}
+                          you could save {perMonth.toFixed(2)}$ per month, which
+                          is {(perMonth * 12).toFixed(2)}$ per year!*{" "}
                         </p>
                       )
                     }
@@ -256,7 +250,6 @@ class HomeMobile extends React.Component {
   };
   whanchange = e => {
     const { index } = this.state;
-    console.log(e.target.value)
     const value = e.target.value;
     let questions = [...this.state.questions];
     questions[index].message = value;
@@ -278,7 +271,6 @@ class HomeMobile extends React.Component {
           <div className={`mobile-div mx-auto ${this.props.phone}`}>
             <div className="mobileinnerabc">
               <HomeChat />
-
               <from onSubmit={this.changeitem}>
                 <div className="my-div letcheckbutton">
                   {this.state.index <= 6 && question.type === "input" && (
@@ -291,7 +283,6 @@ class HomeMobile extends React.Component {
                         justifyContent: "center"
                       }}
                     >
-
                       <input
                         type={question.type}
                         placeholder={question.placeholder}
@@ -300,37 +291,6 @@ class HomeMobile extends React.Component {
                         style={{ backgroundColor: "white", color: "black" }}
                         value={question.message}
                       />
-                    </div>
-                  )}
-                  {this.state.index <= 6 && question.type === "radio" && (
-                    <div
-                      className="home-bottom-content chat-rb-div mbl-input mx-auto"
-                      style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        alignItems: "baseline",
-                        justifyContent: "center"
-                      }}
-                    >
-
-                      <input
-                        type={question.type}
-                        name="yesno"
-                        id="yes"
-                        className="home-bottom-button  text-center"
-                        onChange={this.whanchange}
-                        style={{ backgroundColor: "white", color: "black" }}
-                        value="Yes"
-                      /><label for="yes">Yes</label>
-                      <input
-                        type={question.type}
-                        name="yesno"
-                        id="no"
-                        className="home-bottom-button  text-center"
-                        onChange={this.whanchange}
-                        style={{ backgroundColor: "white", color: "black" }}
-                        value="No"
-                      /><label for="no">No</label>
                     </div>
                   )}
                   <div
@@ -354,5 +314,3 @@ class HomeMobile extends React.Component {
   }
 }
 export default connect()(HomeMobile);
-
-
