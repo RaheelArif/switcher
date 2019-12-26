@@ -88,7 +88,7 @@ class Footer extends React.Component {
                 <span className="social-icon">
                   <a>
                     {/* LN */}
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
                   </a>
                 </span>
                 {/* <span className="social-icon">

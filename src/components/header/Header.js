@@ -56,10 +56,10 @@ class Header extends Component {
                                 <NavItem>
                                     <NavLink to="/faqs"><Link className="header-link" to="/faqs">FAQ</Link></NavLink>
                                 </NavItem>
-                                </div>
                                 <NavItem className="login-btn-area">
                                 <Link  to="/"> <Button className="h-login-btn" color="success" >Log In</Button></Link>
                                 </NavItem>
+                                </div>
 
 
 
