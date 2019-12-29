@@ -9,14 +9,151 @@
 .mobile-div {
   width: 620px;
   height: 470px;
-
-  padding: 0px 45px;
+  padding: 0px 20px;
   padding-top: 28px;
-  background: url("./images/mobile.jpg");
+  background: white;
+  /* background: url("./images/mobile.jpg"); */
   background-size: 100% 100%;
   box-shadow: 0px 0px 20px grey;
   border-radius: 35px;
   margin-bottom: 20px;
+}
+.mobile-div-inner {
+  padding: 0 50px;
+}
+.mobile-div .logo-div {
+  width: 170px;
+  margin: 0 auto;
+}
+.mobile-div .logo-div2 {
+  width: 230px;
+  margin: 0 auto;
+}
+.mobile-div .logo-div2 img {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+.mobile-div .logo-div img {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+.mobile-div .questions-row {
+  margin: 10px 0;
+  height: 40px;
+}
+.mobile-div .questions-row h5 {
+  font-size: 16px;
+  color: rgb(36, 35, 35);
+  margin: 0 0 5px 0;
+}
+.mobile-div .questions-row h5.sl {
+  margin: 12px 0 0 0;
+}
+.mobile-div .questions-row h6 {
+  font-size: 13px;
+  padding: 0 0 0 15px;
+  margin: 0;
+  font-weight: 300;
+  color: gray;
+}
+.mobile-div .questions-row .text-input {
+  background: #fd9700;
+  border: none;
+  outline: none;
+  padding: 3px 10px;
+  text-align: center;
+  border-radius: 20px;
+  width: 95%;
+  height: 27px;
+  color: white;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+}
+.mobile-div .questions-row select {
+  width: 95%;
+  background: #fd9700;
+  border: none;
+  height: 27px;
+  outline: none;
+  padding: 0 15px 0 12px;
+  border-radius: 20px;
+  color: white;
+  margin: 10px 0 0 0;
+}
+.mobile-div .questions-row select option {
+  background: #666;
+}
+
+.mobile-div .questions-row .yesno-togle {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+.mobile-div .questions-row .yesno-togle li {
+  float: left;
+  width: 45%;
+  border-radius: 20px;
+  margin: 0 5% 0 0;
+  height: 27px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background: #808080;
+}
+.mobile-div .questions-row .yesno-togle li.active {
+  background: #fd9700;
+}
+.mobile-div .questions-row .yesno-togle li:last-child {
+  margin: 0;
+}
+.mobile-div .btn-div button {
+  padding: 3px 25px;
+  background: green;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  width: 120px;
+  text-align: center;
+  margin: 25px auto 0 auto;
+  display: block;
+}
+
+.mobile-div .btn-div2 button {
+  padding: 5px 25px;
+  background: #666;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 2px;
+  text-align: center;
+  margin: 25px 0 0 0;
+}
+.mobile-div .btn-div2 .btn1 {
+  float: left;
+}
+.mobile-div .btn-div2 .btn2 {
+  float: right;
+  background: green;
+}
+.mobile-div .wow-t {
+  text-align: center;
+  font-size: 7rem;
+  color: rgb(87, 86, 86);
+}
+.mobile-div .text-statement {
+  color: #fd9700;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 500;
+}
+.mobile-div .bottom-p {
+  clear: both;
+}
+.mobile-div .bottom-p p {
+  padding: 20px 5px 0 5px;
+  font-size: 11px;
+  line-height: 25px;
 }
 .mobileinnerabc {
   background-color: white;

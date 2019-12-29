@@ -271,7 +271,7 @@ class HomeMobile extends React.Component {
         <p className="vppp">
           Watch our video to see easy it is to switch and save on your mortgage
         </p>
-        <div className="home-right  ">
+        <div className="home-right">
           <div className="clear"></div>
           <p className="hr-p"></p>
           <div className={`mobile-div mx-auto  ‎${this.props.phone}`}>
