@@ -6,20 +6,25 @@ padding: 40px;
 border-radius: 20px;
 
 }
+.why-sw-c2{
+    /* background-color: antiquewhite; */
+    display: flex;
+}
 .why-why-r{
-    color: white;
+    color: #fd9700;
     margin-top: 70px;
     margin-left: 50px;
     font-size: 90px;
 }
 .why-sw-r{
-    color: white;
+    color: #fd9700;
     margin-top: 0px;
     margin-left: 50px;
     font-size: 90px;
+   
 }
 .why-sw-r span{
-    color: black;
+    color: #fd9700;
     margin-top: 0px;
     font-size: 90px;
 }
@@ -33,7 +38,7 @@ margin:40px 0px 50px 100px;
 }
 .why-img{
    position: absolute;
-   left: 500px;
+   left: 43%;
    margin-top: 70px;
    width: 190px;
    border-radius: 20px;

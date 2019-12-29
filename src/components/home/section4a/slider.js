@@ -10,15 +10,20 @@ import three from "./images/3.png"
 import four from "./images/4.jpg"
 export default class SimpleSlider extends Component {
 
+  state ={
+    a: 3
+  }
+
+
   render() {
-    
+  
     const settings = {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: window.screen.width>450?3:1,
+      slidesToShow:this.state.a,
       slidesToScroll: 1
-    };
+    }
     return (
         <Slider  className="h-s1-slider-c" {...settings}>
           <div className="slider-cr">
@@ -28,8 +33,12 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div className="slider-cr">
-            <img src={two} alt="" className="slider-img" />
+            <div className="slider-img">
+
+            <img src={two} alt="" className=" logoimg2" />
+            </div>
           </div>
+       
           <div className="slider-cr">
             <div className="slider-img">
 
@@ -87,4 +96,4 @@ export default class SimpleSlider extends Component {
 //       </ItemsCarousel>
 //     </div>
 //   );
-// };
+// }
