@@ -284,7 +284,7 @@ class HomeMobile extends React.Component {
             mortgage
           </p>
           <p className="hr-p"></p>
-          <div className={`mobile-div mx-auto ${this.props.phone}`}>
+          <div className={`mobile-div  ${this.props.phone}`}>
             {
               this.state.status &&
               <div className="mobile-div-inner">
@@ -296,7 +296,7 @@ class HomeMobile extends React.Component {
                   <h2 className="text-statement">You could be saving 20,000<br /> per month and 10,0000 per year*</h2>
                 </div>
                 <div className="btn-div2">
-                  <button className="btn1"  onClick={()=>this.setState({status:false})}>Recalculate</button>
+                  <button className="btn1" onClick={() => this.setState({ status: false })}>Recalculate</button>
                   <button className="btn2">Let's get started</button>
                 </div>
                 <div className="bottom-p">
@@ -308,7 +308,6 @@ class HomeMobile extends React.Component {
             }
             {!this.state.status &&
               <div>
-
                 <div className="logo-div">
                   <img src="images/logo.png" alt="..." />
                 </div>

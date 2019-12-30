@@ -9,10 +9,8 @@
 .mobile-div {
   width: 620px;
   height: 470px;
-  padding: 0px 20px;
-  padding-top: 28px;
+  padding: 28px 20px 0px 20px;
   background: white;
-  /* background: url("./images/mobile.jpg"); */
   background-size: 100% 100%;
   box-shadow: 0px 0px 20px grey;
   border-radius: 35px;
@@ -41,13 +39,13 @@
   margin: 10px 0;
   height: 40px;
 }
+.mobile-div .questions-row h5.sl {
+  margin: 12px 0 0 0;
+}
 .mobile-div .questions-row h5 {
   font-size: 16px;
   color: rgb(36, 35, 35);
   margin: 0 0 5px 0;
-}
-.mobile-div .questions-row h5.sl {
-  margin: 12px 0 0 0;
 }
 .mobile-div .questions-row h6 {
   font-size: 13px;
@@ -264,22 +262,83 @@
     flex-direction: column;
   }
   .mobile-div {
-    width: 330px;
-    height: 370px;
-    margin-left: 100px;
-    background: url("");
+    width: 430px;
+    height: auto;
+    /* margin-left: 100px; */
+    padding: 28px 20px 28px 20px;
     background-color: white;
   }
+  .mobile-div .questions-row {
+    margin: 0 0 15px 0;
+    height: auto;
+  }
+  .mobile-div .questions-row .text-input {
+    padding: 3px 10px;
+    width: 95%;
+    display: block;
+    margin: 5px auto 0 auto;
+  }
+  .mobile-div .questions-row h5 {
+    font-size: 16px;
+    color: rgb(36, 35, 35);
+    width: 95%;
+    padding: 0 0 0 2px;
+    margin: 0 auto;
+  }
+  .mobile-div .questions-row h6 {
+    font-size: 13px;
+    padding: 0 0 0 15px;
+    margin: 0;
+    font-weight: 300;
+    width: 95%;
+    margin: 0 auto;
+    color: gray;
+  }
+  .mobile-div .questions-row h5.sl {
+    margin: 0 auto;
+    padding: 0 0 0 2px;
+  }
+  .mobile-div .questions-row .yesno-togle {
+    margin: 10px auto 0 auto;
+    padding: 0 10px;
+  }
+  .mobile-div .questions-row .yesno-togle li {
+    margin: 0 10% 0 0;
+  }
+  .mobile-div .questions-row select {
+    padding: 0 15px 0 12px;
+    margin: 10px auto 0 auto;
+    display: block;
+  }
+  .mobile-div .questions-row select option {
+    background: #666;
+  }
+  .mobile-div .wow-t {
+    font-size: 5rem;
+  }
+  .mobile-div .text-statement {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .mobile-div .btn-div2 .btn1 {
+    float: left;
+    padding: 5px 15px;
+  }
+  .mobile-div .btn-div2 .btn2 {
+    float: right;
+    padding: 5px 15px;
+
+    background: green;
+  }
+  .mobile-div-inner {
+    padding: 0 20px;
+  }
   .home-right {
+    width: 430px !important;
     margin-left: 0px;
   }
 }
 @media screen and (max-width: 800px) {
-  .home-right {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-  }
   .letcheckbutton {
     margin: 10px;
     display: flex;
@@ -290,17 +349,124 @@
     align-content: center;
     flex-direction: column;
   }
+  .home-right {
+    width: 430px !important;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
   .mobile-div {
-    margin-bottom: 20px;
-    width: 330px;
-    height: 370px;
-    background: url("");
+    width: 430px;
+    height: auto;
+    padding: 28px 20px 28px 20px !important;
     background-color: white;
+  }
+  .mobile-div .questions-row {
+    margin: 0 0 15px 0;
+    height: auto;
+  }
+  .mobile-div .questions-row .text-input {
+    padding: 3px 10px;
+    width: 95%;
+    display: block;
+    margin: 5px auto 0 auto;
+  }
+  .mobile-div .questions-row h5 {
+    font-size: 16px;
+    color: rgb(36, 35, 35);
+    width: 95%;
+    padding: 0 0 0 2px;
+    margin: 0 auto;
+  }
+  .mobile-div .questions-row h6 {
+    font-size: 13px;
+    padding: 0 0 0 15px;
+    margin: 0;
+    font-weight: 300;
+    width: 95%;
+    margin: 0 auto;
+    color: gray;
+  }
+  .mobile-div .questions-row h5.sl {
+    margin: 0 auto;
+    padding: 0 0 0 2px;
+  }
+  .mobile-div .questions-row .yesno-togle {
+    margin: 10px auto 0 auto;
+    padding: 0 10px;
+  }
+  .mobile-div .questions-row .yesno-togle li {
+    margin: 0 10% 0 0;
+  }
+  .mobile-div .questions-row select {
+    padding: 0 15px 0 12px;
+    margin: 10px auto 0 auto;
+    display: block;
+  }
+  .mobile-div .questions-row select option {
+    background: #666;
   }
 }
 @media screen and (max-width: 530px) {
   .hr-p {
     width: auto;
+  }
+  .home-right {
+    width: 330px !important;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+  .mobile-div {
+    width: 330px;
+    height: auto;
+    padding: 28px 0 28px 0 !important;
+    background-color: white;
+  }
+  .mobile-div .questions-row {
+    margin: 0 0 15px 0;
+    height: auto;
+  }
+  .mobile-div .questions-row .text-input {
+    padding: 3px 10px;
+    width: 95%;
+    display: block;
+    margin: 5px auto 0 auto;
+  }
+  .mobile-div .questions-row h5 {
+    font-size: 16px;
+    color: rgb(36, 35, 35);
+    width: 95%;
+    padding: 0 0 0 2px;
+    margin: 0 auto;
+  }
+  .mobile-div .questions-row h6 {
+    font-size: 13px;
+    padding: 0 0 0 15px;
+    margin: 0;
+    font-weight: 300;
+    width: 95%;
+    margin: 0 auto;
+    color: gray;
+  }
+  .mobile-div .questions-row h5.sl {
+    margin: 0 auto;
+    padding: 0 0 0 2px;
+  }
+  .mobile-div .questions-row .yesno-togle {
+    margin: 10px auto 0 auto;
+    padding: 0 10px;
+  }
+  .mobile-div .questions-row .yesno-togle li {
+    margin: 0 10% 0 0;
+  }
+  .mobile-div .questions-row select {
+    padding: 0 15px 0 12px;
+    margin: 10px auto 0 auto;
+    display: block;
+  }
+  .mobile-div .questions-row select option {
+    background: #666;
   }
 }
 .mainchatbox::-webkit-scrollbar {

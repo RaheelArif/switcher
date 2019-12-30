@@ -262,6 +262,20 @@ class HomeMobile extends React.Component {
       questions
     });
   };
+  handleTogle = e => {
+    // console.log(e.target.parentNode.childNodes);
+    var lists = e.target.parentNode.childNodes;
+    for (var i = 0; i < lists.length; i++) {
+      console.log(lists[i].classList.contains("active"));
+      if (lists[i].classList.contains("active")) {
+        lists[i].classList.remove("active");
+      }
+    }
+    e.target.classList.add("active");
+  };
+  handleScreen = () => {
+    this.setState({ status: true });
+  };
   render() {
     const question = this.state.questions[this.state.index];
     return (
@@ -273,82 +287,131 @@ class HomeMobile extends React.Component {
         </p>
         <div className="home-right">
           <div className="clear"></div>
-          <p className="hr-p"></p>
-          <div className={`mobile-div mx-auto  ‎${this.props.phone}`}>
-            <div className="mobileinnerabc">
-              <HomeChat />
-
-              <from onSubmit={this.changeitem}>
-                <div className="my-div letcheckbutton">
-                  {this.state.index <= 6 && question.type === "input" && (
-                    <div
-                      className="home-bottom-content mbl-input mx-auto"
-                      style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        alignItems: "baseline",
-                        justifyContent: "center"
-                      }}
-                    >
-                      <input
-                        type={question.type}
-                        placeholder={question.placeholder}
-                        className="home-bottom-button text-res text-center"
-                        onChange={this.whanchange}
-                        style={{ backgroundColor: "white", color: "black" }}
-                        value={question.message}
-                      />
-                    </div>
-                  )}
-                  {this.state.index <= 6 && question.type === "radio" && (
-                    <div
-                      className="home-bottom-content chat-rb-div mbl-input mx-auto"
-                      style={{
-                        display: "flex",
-                        flexDirection: "row",
-                        alignItems: "baseline",
-                        justifyContent: "center"
-                      }}
-                    >
-                      <input
-                        type={question.type}
-                        name="yesno"
-                        id="yes"
-                        className="home-bottom-button  text-center"
-                        onChange={this.whanchange}
-                        style={{ backgroundColor: "white", color: "black" }}
-                        value="Yes"
-                      />
-                      <label for="yes">Yes</label>
-                      <input
-                        type={question.type}
-                        name="yesno"
-                        id="no"
-                        className="home-bottom-button  text-center"
-                        onChange={this.whanchange}
-                        style={{ backgroundColor: "white", color: "black" }}
-                        value="No"
-                      />
-                      <label for="no">No</label>
-                    </div>
-                  )}
-                  <div
-                    className="home-bottom-content my-div2   "
-                    style={{ marginBottom: "20px" }}
+          {/* <p className="hr-p"></p> */}
+          <div className={`mobile-div mx-auto ${this.props.phone}`}>
+            {this.state.status && (
+              <div className="mobile-div-inner">
+                <div className="logo-div2">
+                  <img src="images/logo.png" alt="..." />
+                </div>
+                <div>
+                  <h1 className="wow-t">WOW</h1>
+                  <h2 className="text-statement">
+                    You could be saving 20,000 per month and 10,0000 per year*
+                  </h2>
+                </div>
+                <div className="btn-div2">
+                  <button
+                    className="btn1"
+                    onClick={() => this.setState({ status: false })}
                   >
-                    <input
-                      type="submit"
-                      onClick={this.changeitem}
-                      className={
-                        "home-bottom-button text-center " +
-                        (this.state.index === 6 ? "clr-green" : "")
-                      }
-                      value={!this.state.index ? "OK let's go" : "submit"}
-                    />
+                    Recalculate
+                  </button>
+                  <button className="btn2">Let's get started</button>
+                </div>
+                <div className="bottom-p">
+                  <p>
+                    this analysis is based on lowest rate available the cost
+                    does not constitute an offer of a mortgage and we will need
+                    to doa full assessment of your circumstance to provide you
+                    with a personal
+                  </p>
+                </div>
+              </div>
+            )}
+            {!this.state.status && (
+              <div>
+                <div className="logo-div">
+                  <img src="images/logo.png" alt="..." />
+                </div>
+                <div className="row questions-row">
+                  <div className="col-lg-7">
+                    <h5>What is the current value of the property?</h5>
+                    <h6>(if you don't know an estimate is fine for now)</h6>
+                  </div>
+                  <div className="col-lg-5">
+                    <input className="text-input" type="text" />
                   </div>
                 </div>
-              </from>
-            </div>
+
+                <div className="row questions-row">
+                  <div className="col-lg-7">
+                    <h5 className="sl">
+                      What is the balance of your mortgage?
+                    </h5>
+                  </div>
+                  <div className="col-lg-5">
+                    <input className="text-input" type="text" />
+                  </div>
+                </div>
+
+                <div className="row questions-row">
+                  <div className="col-lg-7">
+                    <h5 className="sl">
+                      Are you looking to borrow more money?
+                    </h5>
+                  </div>
+                  <div className="col-lg-5">
+                    <ul className="yesno-togle">
+                      <li onClick={e => this.handleTogle(e)}>yes</li>
+                      <li
+                        className="last-child"
+                        onClick={e => this.handleTogle(e)}
+                      >
+                        no
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="row questions-row">
+                  <div className="col-lg-7">
+                    <h5 className="">
+                      How many years do you have left to
+                      <br /> pay it off?
+                    </h5>
+                  </div>
+                  <div className="col-lg-5">
+                    <select>
+                      <option>Select from options</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="row questions-row">
+                  <div className="col-lg-7">
+                    <h5 className="sl">Are you on a fixed term?</h5>
+                  </div>
+                  <div className="col-lg-5">
+                    <select>
+                      <option>Select from options</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="row questions-row">
+                  <div className="col-lg-7">
+                    <h5 className="sl">What is your monthly payment?</h5>
+                  </div>
+                  <div className="col-lg-5">
+                    <input className="text-input" type="text" />
+                  </div>
+                </div>
+                <div className="btn-div">
+                  <button onClick={this.handleScreen}>Calculate</button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
