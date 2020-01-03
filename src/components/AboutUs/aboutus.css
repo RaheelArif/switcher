@@ -103,11 +103,22 @@ background-size: contain;
 }
 @media screen and (max-width: 800px) {
     .aboutut-r{
-        background-image: url("../other-pages-800.jpg");
+        background-image: none;
     }
-}
-@media screen and (max-width: 400px) {
-    .aboutut-r{
-        background-image: url("../other-page-350.png");
+    .aboutus-section{
+        margin-top:10px;
+        margin-bottom:50px;
     }
+    .about-con{
+        padding: 10px 0;    
+    }
+    .right-content {
+      margin-top: 0px;
+      padding-top: 10px;
+    }
+    .left-content{
+        margin: 0px 0;
+    }
+    
 }
+

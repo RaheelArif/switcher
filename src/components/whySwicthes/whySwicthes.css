@@ -75,6 +75,24 @@ margin:40px 0px 50px 100px;
         margin: 0% 5%;
     
     }
+    .why-why-r{
+      color: #fd9700;
+      margin-top: 20px;
+      margin-left: 10px;
+      font-size: 50px;
+  }
+  .why-sw-r{
+      color: #fd9700;
+      margin-top: 0px;
+      margin-left: 10px;
+      font-size: 50px;
+     
+  }
+  .why-sw-r span{
+      color: #fd9700;
+      margin-top: 0px;
+      font-size: 50px;
+  }
   }
 .ws-h1{
     color: #fd9700;
