@@ -30,7 +30,7 @@
   justify-content: center;
 }
 .logoimg1{
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 .logoimg3{
@@ -45,21 +45,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fd9700;
+  background-color: black;
   border-radius: 50%;
 }
 .slick-arrow.slick-next:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fd9700;
+  background-color: black;
   border-radius: 50%;
 }
 .slick-arrow.slick-next:focus{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fd9700;
+  background-color: black;
   border-radius: 50%;
 }
 
@@ -67,24 +67,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fd9700;
+  background-color: black;
   border-radius: 50%;
 }
 .slick-arrow.slick-prev:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fd9700;
+  background-color: black;
   border-radius: 50%;
 }
 .slick-arrow.slick-prev:focus{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fd9700;
+  background-color: black;
   border-radius: 50%;
-}
 
+}
+/* .slick-prev:before, .slick-next:before{
+  border-radius: 50%;
+  margin-left: -3px;
+  margin-top: -2px;
+  color: white !important;
+  font-size: 26px !important;
+} */
 @media screen and (max-width: 1200px) {
 
 
@@ -134,7 +141,7 @@
     background-image: linear-gradient(rgb(255, 255, 255), rgb(226, 226, 226)); 
 }
 .logoimg1{
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
@@ -168,4 +175,7 @@
 
 
   }
+  .h-s1-slider-c{
+    margin-top: 60px;
+}
 } 

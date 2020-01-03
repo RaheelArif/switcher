@@ -172,6 +172,11 @@ background-color: white;
         padding-left: 0px !important;
     
     }
+    .section2-c{
+        width: 100%;
+        margin-top: 40px;
+        padding-top: 20px;
+    }
     .easy-steps{
         font-size: 70px;
         font-weight: 700;
