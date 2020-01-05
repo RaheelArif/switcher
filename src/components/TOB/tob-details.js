@@ -107,17 +107,7 @@ var tob = [
           For a serious illness policy, we will explain clearly to you the
           restrictions, conditions and general exclusions that attach to that
           policy.
-          <h6>C. Non-Life </h6>
-          We can provide advice on and arrange products for household
-          insurance.
-          <br /><br/>
-          We provide general insurance advice on a limited analysis basis,
-          i.e. providing services on the basis of a limited number of
-          contracts within the market. We provide advice on the following
-          product providers:
-          <ul>
-            <li>New Ireland Ltd.</li>
-          </ul>
+
           <br/>
           We will also offer assistance to you in seeking renewal terms on
           your cover.

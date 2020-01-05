@@ -11,6 +11,8 @@ class ContactUs extends React.Component{
       <div className="my-contact-us aboutut-r">
 <Header />
       <section className="contact-us-section">
+      <h1 className="about-r">Contact</h1>
+      <h1 className="us-r">US</h1>
         <div className="container contact-us-con">
           <h3 className="contactus-heading">we are here to help</h3>
           <h6 className="contactus-subheading">we are available Monday to Friday 5 days a week, 8:30am to 6:00pm</h6>

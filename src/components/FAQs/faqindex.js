@@ -7,9 +7,9 @@ class FAQIndex extends React.Component {
   render() {
     var faqs = [
       {
-        question: "How mush can I save?",
+        question: "How much can I save?",
         answer:
-          "The Central Bank of Ireland published their research that showed that many existing mortgage holders can save over €10,000 euros by switching their mortgage. It will depend on your specific circumstances but just 20 seconds on our calculator will show you what its worth for you to switcheroo. "
+          "The Central Bank of Ireland published  research that showed that many existing mortgage holders can save over €10,000 euros by switching their mortgage. It will depend on your specific circumstances but just 20 seconds on our calculator will show you what its worth for you to switcheroo. "
       },
       {
         question: "What’s the best mortgage I can get?",
@@ -19,7 +19,7 @@ class FAQIndex extends React.Component {
       {
         question: "What documents will you need from me?",
         answer:
-          "Initially, none. The first step is for you to answer a few questions, so that we understand your circumstances. When we move on to preparing your submission to a lender, we will need to make sure that your information is accurate, and we’ll need some documents from you. Those include proof of your identity, income, bills and address, as well as things like visa status where it applies. We’ll always make it clear exactly what we need and why."
+          "Initially, none. The first step is for you to answer a few questions, so that we understand your financial health using our clever  financial health check algorithms . When we move on to preparing your submission to a lender, we will need to make sure that your information is accurate, and we will then need documentation to support your application. Those include proof of your identity, income, bills and address, as well as things like visa status where it applies. We’ll always make it clear exactly what we need and why."
       },
       {
         question: "Do you perform credit checks?",
@@ -29,7 +29,7 @@ class FAQIndex extends React.Component {
       {
         question: "I want to switcheroo, what’s next?",
         answer:
-          "Once you’ve worked out how much you can save you’ll need to sign up and provide us some basic information. Usually, this shouldn’t take more than 30 minutes, and you’ll be one step closer to a mortgage. At this point, you can have a phone call with one of our mortgage experts. They will answer any questions you have and tell you exactly what documents you’re going to need. From there, the expert team will guide you through the application process and keep you updated on progress. You can check progress online and we will keep you updated along the way."
+          "Once you’ve worked out how much you can save you’ll need to sign up and provide us some basic information about your financial circumstances. Usually, this shouldn’t take more than 3 minutes, and you’ll be one step closer to a mortgage. At this point, you can have a phone call with one of our mortgage experts. They will answer any questions you have and tell you exactly what documents you’re going to need.From there you will need to answer the questions on the platform about your specific circumstance and the expert team will guide you through the application process. You can check progress online and we will keep you updated along the way."
       },
       {
         question: "What does Switcheroo.ie do with my data?",
@@ -39,13 +39,14 @@ class FAQIndex extends React.Component {
       {
         question: "How does Switcheroo.ie make money?",
         answer:
-          "Yep, we don’t charge any brokers fees. If you get a mortgage using Swithceroo.ie, the lender you use has to pay us a fee. Some brokers charge you an additional fee but not us, we are free forever. These fees never affect our advice. Our reputation and livelihood depend on us always giving our customers the best possible advice. The important bit is: we’ll never charge you a penny."
+          "Yep, we don’t charge any brokers fees. If you get a mortgage using Swithceroo.ie, the lender you use has to pay us a fee. Some brokers charge you an additional fee but not us, we are free forever. These fees never affect our advice. Our reputation and livelihood depend on us always giving our customers the best possible advice. The important bit to: we’ll never charge you a penny."
       }
     ];
     return (
       <div className="fa1-my-bg faq-faq aboutut-r">
 <Header />
         <section className="faq-section">
+        <h1 className="about-r">FAQ</h1>
           <div style={{backgroundColor:"white"}} className="container faq-con">
             <div className="faq-heading">
               {/* <h1>FAQs</h1> */}

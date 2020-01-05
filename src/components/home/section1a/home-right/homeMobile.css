@@ -106,11 +106,12 @@
 }
 .mobile-div .btn-div button {
   padding: 3px 25px;
-  background: green;
+  background: #1b9c01;
   border: none;
   color: white;
   border-radius: 2px;
   width: 120px;
+  border-radius: 5px;
   text-align: center;
   margin: 25px auto 0 auto;
   display: block;
@@ -129,10 +130,12 @@
 }
 .mobile-div .btn-div2 .btn1 {
   float: left;
+  border-radius: 5px;
 }
 .mobile-div .btn-div2 .btn2 {
   float: right;
-  background: green;
+  background: #1b9c01;
+  border-radius: 5px !important;
 }
 .mobile-div .wow-t {
   text-align: center;

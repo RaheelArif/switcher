@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import  "./section3.css";
-import section3 from "./section3.png"
+import section3 from "./expertAdvice.gif"
 export default class Section1 extends Component {
     render() {
         return (

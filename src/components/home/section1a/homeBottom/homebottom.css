@@ -39,9 +39,12 @@ outline: none;
 }
 .home-bottom-button2:hover {
   background-color: #0e5500;
-  color: #fd9700;
+  color: white;
 transition: 0.5s;
-border-color: #fd9700;
+border-color: transparent;
+}
+.home-bottom-button2:focus {
+outline-color: transparent;
 }
 @media screen and (max-width: 1111px) {
   .home-bottom-p {

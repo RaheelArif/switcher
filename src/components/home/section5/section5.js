@@ -22,10 +22,10 @@ traditional = () => {this.setState({box :3})}
                         <h1>Banks</h1>
                         <ul>
                             <li>Queue in branch</li>
-                            <li>In Person grilling</li>
+                            <li>In-person grilling</li>
                             <li>Bankers hours</li>
                             <li>Corporate Speak</li>
-                            <li>Stiff Banksters</li>
+                            <li>Stiff bankers</li>
                         </ul>
                     </div >
                     <div onClick={this.switcher}  className={`s5-switcher ${name.box === 2 ? "click" : ""}`}>
@@ -43,10 +43,10 @@ traditional = () => {this.setState({box :3})}
                         <img src={three} alt=""/>
                         <h1>Traditional Broker</h1>
                         <ul className="tick">
-                            <li>Schedule and appointment</li>
+                            <li>Schedule an appointment</li>
                             <li>Stack of paper</li>
-                            <li>when you are at work</li>
-                            <li>Condusing language</li>
+                            <li>When you are at work</li>
+                            <li>Confusing language</li>
                             <li>Wanna be bankers</li>
                         </ul>
                     </div>

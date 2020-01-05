@@ -23,7 +23,7 @@ class HomeVideo extends React.Component {
                  <p  style={{height:"90px"}}>  
                         </p>
                     <div className="video-div">
-                     <video className="sw-video" src={Video}   preload controls></video>
+                     <video height="420px"  className="sw-video" src={Video} poster  preload controls></video>
                     </div>
                 </div>
 

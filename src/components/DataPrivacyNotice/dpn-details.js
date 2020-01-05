@@ -5,18 +5,7 @@ var dpn = [
       heading: "Who we are:",
       details: (
         <p>
-          Your information is gathered, stored, shared and used by
-          Switcheroo.ie. Throughout this document “we” refers to
-          Switcheroo.ie.
-          <br />
-          <br />
-          Our principal business is to provide advice and arrange transactions
-          on behalf of clients in relation to mortgages, life and non-life
-          products. A full list of product producers with which we deal is
-          available on request.
-          <br />
-          <br />
-          Your privacy is important to us. At Panda Capital Ltd. trading as
+                    Your privacy is important to us. At Panda Capital Ltd. trading as
           Switcheroo.ie (C192972), we take your privacy seriously. It’s
           important that you know exactly what we do with personal information
           that you and others provide to us, why we gather it and what it
@@ -31,9 +20,23 @@ var dpn = [
             <li>Creating value for you</li>
           </ul>
           <br />
+       
           We recommend that you take time to read this notice carefully. If
           you have any questions about how we use your information, please
           contact us.
+                   <br />   <br />
+          Your information is gathered, stored, shared and used by
+          Switcheroo.ie. Throughout this document “we” refers to
+          Switcheroo.ie.
+          <br />
+          <br />
+          Our principal business is to provide advice and arrange transactions
+          on behalf of clients in relation to mortgages, life and non-life
+          products. A full list of product producers with whome we deal is
+          available on request.
+          <br />
+          <br />
+
         </p>
       )
     },

@@ -30,7 +30,7 @@ class AboutUs extends React.Component {
                     reducing the cost of your mortgage and ultimately your home.
                     Hard working mortgage customers could save thousands per year
                     by switching and many don’t. The reason is because people are
-                    too busy and suffer from inertia. That’s why we have made the
+                    too busy and suffer from inertia. that’s why we have made the
                     switcheroo.ie platform. The online platform allows you apply
                     online whenever suits and at your own pace. We have
                     streamlined the process so make it as simple as can be and to

@@ -29,7 +29,7 @@ export default class Section1 extends Component {
                     <div className="c2-info">
                         <div className="c2-info-1">
                             <h1 className="c2-info-h1">Online 24/7</h1>
-                            <p className="c2-info-p">Access your account through our platform and your anytime anywhere on any debice</p>
+                            <p className="c2-info-p">Access your account through our platform and your anytime anywhere on any device</p>
                         </div>
                         <div className="c2-info-2">
                             <h1 className="c2-info-h1">Best mortgage rate</h1>
@@ -47,7 +47,7 @@ export default class Section1 extends Component {
                 </div>
                 <div className="s2-c1">
 
-                <button>Start Saving</button>
+                <button className="start-svng-btn">Start Saving</button>
                 </div>
             </div>
         )
