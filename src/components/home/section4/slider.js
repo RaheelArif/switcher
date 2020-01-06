@@ -41,6 +41,12 @@ export default class SimpleSlider extends Component {
             <img src={four} alt="" className="logoimg4" />
             </div>
           </div>
+          <div className="slider-cr">
+            <div className="slider-img">
+
+            <img src={five} alt="" className="logoimg4" />
+            </div>
+          </div>
 
 
         </Slider>

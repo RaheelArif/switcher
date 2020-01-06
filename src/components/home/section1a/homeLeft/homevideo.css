@@ -27,6 +27,9 @@ margin-left: 130px;
   height: 470px;;
   border-radius: 20px;
 }
+.sw-video1:focus{
+  outline: transparent;
+}
 .sw-video:focus{
 
   outline-color: transparent;

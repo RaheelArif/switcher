@@ -2,8 +2,7 @@ import React from 'react';
 
 import Video from "./homeVideo.mp4"
 import "./homevideo.css"
-
-
+import post from "./thum.png"
 
 class HomeVideo extends React.Component {
 
@@ -23,7 +22,9 @@ class HomeVideo extends React.Component {
                  <p  style={{height:"90px"}}>  
                         </p>
                     <div className="video-div">
-                     <video height="420px"  className="sw-video" src={Video} poster  preload controls></video>
+                    <video poster={post} className="sw-video1"  height="420px" src={Video}   preload controls></video>
+
+                     {/* <video poster={post} height="420px"  className="sw-video" src={Video} poster  preload='auto' controls></video> */}
                     </div>
                 </div>
 

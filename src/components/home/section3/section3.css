@@ -1,5 +1,5 @@
 .s3-left{
-    width: 600px;
+    width: 50%;
     background-color: #fd9700;
     height: 400px;
     padding:30px 100px ;
@@ -41,7 +41,7 @@ font-size: 34px;
 }
 .right-c1{
     display: flex;
-    width: 600px;
+    width: 50%;
     height: 400px;
     /* box-shadow: 0px 8px 7px -5px black; */
     align-items: center;
@@ -63,7 +63,7 @@ font-size: 34px;
 .shadow{
     display: flex;
     justify-content: center;
-    box-shadow: 0px 0px 20px rgb(100, 100, 100);
+    /* box-shadow: 0px 0px 20px rgb(100, 100, 100); */
 }
 .right-call h1{
  color: #fd9700;
@@ -84,14 +84,14 @@ font-size: 34px;
 }
 @media screen and (max-width: 1260px) {
     .s3-left{
-        width: 500px;
+        width: 50%;
         background-color: #fd9700;
         height: auto;
         padding:30px 70px ;   
     }
     .right-c1{
         display: flex;
-        width: 500px;
+        width: 50%;
         height: 400px;
         /* box-shadow: 0px 8px 7px -5px black; */
         align-items: center;

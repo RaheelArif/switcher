@@ -119,6 +119,19 @@ background-size: contain;
     .left-content{
         margin: 0px 0;
     }
+    .about-r{
+        color: #fd9700;
+        margin-left: 50px;
+        font-size: 70px;
+        padding-bottom: 0px;
+        margin-bottom: -10px;
+    }
+    .us-r{
+        font-size: 70px;
+        color: #fd9700;
+        margin: -30px 0px 0px 160px;
+        padding-top: 0px;
+    }
     
 }
 
