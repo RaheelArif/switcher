@@ -65,9 +65,9 @@ margin:40px 0px 50px 100px;
         }
         .why-img{
            position: absolute;
-           left: 210px;
-           margin-top: 40px;
-           width: 100px;
+           left: 70%;
+           margin-top: 130px;
+           width: 150px;
         }
   }
 @media screen and (max-width: 680px) {
@@ -81,6 +81,12 @@ margin:40px 0px 50px 100px;
       margin-left: 10px;
       font-size: 50px;
   }
+  .why-img{
+    position: absolute;
+    left: 66%;
+    margin-top: 40px;
+    width: 100px;
+ }
   .why-sw-r{
       color: #fd9700;
       margin-top: 0px;
@@ -93,6 +99,14 @@ margin:40px 0px 50px 100px;
       margin-top: 0px;
       font-size: 50px;
   }
+  .ws-container{
+    margin: 0% 5%;
+    background-color: white;
+    box-shadow: 0px 0px 30px rgb(167, 164, 164);
+padding: 15px;
+border-radius: 20px;
+
+}
   }
 .ws-h1{
     color: #fd9700;

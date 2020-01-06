@@ -44,7 +44,7 @@ class Header extends Component {
                             <Nav className=" ml-auto2" navbar>
                                 <div className="header-link-area">
 
-                                <NavItem>
+                                <NavItem className="nav-item">
                                     <NavLink to="/about"><Link className="header-link" to="/aboutus">About Us</Link></NavLink>
                                 </NavItem>                            
                                 <NavItem>

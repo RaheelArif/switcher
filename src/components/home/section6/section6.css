@@ -1,11 +1,11 @@
 .section6{
     display: flex;
     flex-direction: row;
-     margin-top: 200px;
-     margin-bottom: 500px;
+     margin-top: 100px;
+     margin-bottom:50px;
      width: 100%;
-     height: 500px;
-     padding-top: 100px;
+     height: auto;
+     padding-top:100px;
      
 }
 .s6-c{
@@ -15,7 +15,7 @@
 }
 .remember{
     color: #fd9700;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
 
 }
@@ -32,44 +32,70 @@
 }
 .s6-c2{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
     padding-right: 10px;
 
 }
 .s6-c2 img{
-    width: 800px;
-    margin: -100px 0px 0px 0px;
+    width: 500px;
+    margin: -50px 0px 0px 150px;
 
 }
 @media screen and (max-width: 1404px) {
     .s6-c2 img{
-        width: 600px;
-        margin: -100px 0px 0px 0px;
+        width: 500px;
+        margin: -50px 0px 0px 70px;
     
     }
 }
-@media screen and (max-width: 804px) {
+
+@media screen and (max-width: 1204px) {
+    .s6-c2 img{
+        width: 450px;
+        margin: -50px 0px 0px 30px;
+    
+    }
     .s6-c{
-        margin-left: 10px;
+        width: auto;
+        height: auto;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 1104px) {
+    .s6-c2 img{
+        width: 450px;
+        margin: -50px 0px 0px 30px;
+    
+    }
+    .s6-c{
+        width: auto;
+        height: auto;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 1034px) {
+    .s6-c{
+        margin-left: 20px;
     }
     .remember{
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 700;
     
     }
     .complete{
-        margin: 10px 0px 20px 20px;
-        font-size: 25px;
+        margin: 10px 0px 20px 100px;
+        font-size: 30px;
     }
     .free{
 
-        font-size: 50px;
-        margin:0px 0px 0px 40px;
+        font-size: 60px;
+        margin:0px 0px 0px 250px;
     }
 
     .s6-c2 img{
-        width: 250px;
-        margin: -50px 0px 0px 0px;
+        width: 350px;
+        margin: -50px 0px 0px 100px;
     }
 
     .section6{
@@ -80,5 +106,163 @@ margin-bottom: 20px;
          padding-top: 0px;
          height: auto;
   
+    }
+  }
+
+  @media screen and (max-width: 934px) {
+    .s6-c{
+        margin-left: 20px;
+    }
+    .remember{
+        font-size: 40px;
+        font-weight: 700;
+    
+    }
+    .complete{
+        margin: 10px 0px 20px 100px;
+        font-size: 30px;
+    }
+    .free{
+
+        font-size: 60px;
+        margin:0px 0px 0px 250px;
+    }
+
+    .s6-c2 img{
+        width: 300px;
+        margin: -50px 0px 0px 50px;
+    }
+
+    .section6{
+
+         margin-top: 100px;
+margin-bottom: 0px;
+margin-bottom: 20px;
+         padding-top: 0px;
+         height: auto;
+  
+    }
+  }
+
+  
+  @media screen and (max-width: 854px) {
+    .s6-c{
+        margin-left: 20px;
+    }
+    .remember{
+        font-size:35px;
+        font-weight: 700;
+    
+    }
+    .complete{
+        margin: 10px 0px 20px 70px;
+        font-size: 25px;
+    }
+    .free{
+
+        font-size: 50px;
+        margin:0px 0px 0px 200px;
+    }
+
+    .s6-c2 img{
+        width: 250px;
+        margin: 00px 0px 0px 50px;
+    }
+
+
+  }
+  @media screen and (max-width: 854px) {
+    .s6-c{
+        margin-left: 10px;
+    }
+    .remember{
+        font-size:35px;
+        font-weight: 700;
+    
+    }
+    .complete{
+        margin: 10px 0px 20px 40px;
+        font-size: 25px;
+    }
+    .free{
+
+        font-size: 50px;
+        margin:0px 0px 0px 150px;
+    }
+
+    .s6-c2 img{
+        width: 250px;
+        margin: 00px 0px 0px 50px;
+    }
+
+
+  }
+  @media screen and (max-width: 604px) {
+    .s6-c{
+        margin-left: 10px;
+    }
+    .remember{
+        font-size:35px;
+        font-weight: 700;
+    
+    }
+    .complete{
+        margin: 10px 0px 20px 30px;
+        font-size: 25px;
+    }
+    .free{
+
+        font-size: 60px;
+        margin:-20px 0px 0px 130px;
+    }
+
+    .s6-c2 img{
+        width: 220px;
+        margin: 00px 0px 0px 140px;
+    }
+    .section6{
+        display: flex;
+        flex-direction: column;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         width: 100%;
+         height:auto;
+         padding-top: 0px;
+         
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .s6-c{
+        margin-left: 10px;
+    }
+    .remember{
+        font-size:35px;
+        font-weight: 700;
+    
+    }
+    .complete{
+        margin: 10px 0px 20px 30px;
+        font-size: 25px;
+    }
+    .free{
+
+        font-size: 60px;
+        margin:-20px 0px 0px 110px;
+    }
+
+    .s6-c2 img{
+        width: 220px;
+        margin: 00px 0px 0px 100px;
+    }
+    .section6{
+        display: flex;
+        flex-direction: column;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         width: 100%;
+         height:auto;
+         padding-top: 0px;
+         
     }
   }

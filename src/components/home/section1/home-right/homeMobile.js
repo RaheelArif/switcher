@@ -283,7 +283,7 @@ class HomeMobile extends React.Component {
         className={`col-lg-12 col-md-12 res-mbmb home-mbl  ‎${this.props.class}`}
       >
         <p className="vppp">
-          Watch our video to see easy it is to switch and save on your mortgage
+        Lets see how much you are overpaying your bank for you mortgage
         </p>
         <div className="home-right">
           <div className="clear"></div>

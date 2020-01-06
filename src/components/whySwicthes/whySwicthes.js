@@ -21,7 +21,7 @@ export default class whySwicthes extends Component {
                 <div className="ws-container">
                     <div className="ws-p1">The simple fact is that many people can save thousands of euros each year by switching their mortgage, but they chose not to and instead pay extra hard-earned money to their mortgage provider than they have to. </div>
                     <div className="ws-c2">
-                        <h3 className="ws-h3">Why is there such madness ? </h3>
+                        <h3 className="ws-h3">Why is there such madness? </h3>
                         <p className="ws-c2-p1">People switch in other areas of their life all the time. Let’s look at switching habits in Ireland: </p>
                         <ul>
                             <li>30% of products purchased on line are returned </li>
