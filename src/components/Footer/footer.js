@@ -41,10 +41,10 @@ class Footer extends React.Component {
                   <Link className="footer-f" to="/aboutus">About us</Link>
                 </li>
                 <li>
-                  <a className="footer-f" href="tel:+92300XXXXXXX">Why Switch?</a>
+                  <Link className="footer-f" to="/why-swicthes">Why Switch?</Link>
                 </li>
                 <li>
-                  <a className="footer-f" href="tel:+92300XXXXXXX">FAQ</a>
+                  <Link className="footer-f" to="/faqs">FAQ</Link>
                 </li>
               </ul>
             </div>

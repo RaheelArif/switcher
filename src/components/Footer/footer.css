@@ -99,14 +99,14 @@
 }
 .about-p {
   color: lightgray;
-  /* text-align: justify; */
-  padding: 10px;
+  text-align: justify;
+  padding: 10px 0px;
 }
 .social-icon-div {
   margin: 40px 0;
 }
 .footer-logo{
-  width: 90%;
+  width: 100%;
   padding: 15px 0 0 0;
 
 }
